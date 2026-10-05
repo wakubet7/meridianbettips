@@ -5,21 +5,39 @@ on:
       - main
 jobs:
   deploy:
-    name: Deploy via FTP
+    name: Deploy via Node.js FTP
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install lftp
-        run: sudo apt-get install -y lftp
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
 
-      - name: Deploy index.html via FTPS
+      - name: Install ftp-deploy
+        run: npm install ftp-deploy
+
+      - name: Deploy to Hostinger
         run: |
-          lftp -c "
-            set ftp:ssl-allow yes;
-            set ssl:verify-certificate no;
-            open -u ${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }} ${{ secrets.FTP_SERVER }};
-            put -O public_html/ index.html;
-            bye
+          node -e "
+          const FtpDeploy = require('ftp-deploy');
+          const ftp = new FtpDeploy();
+          ftp.deploy({
+            user: '${{ secrets.FTP_USERNAME }}',
+            password: '${{ secrets.FTP_PASSWORD }}',
+            host: '${{ secrets.FTP_SERVER }}',
+            port: 21,
+            localRoot: __dirname,
+            remoteRoot: '/public_html/',
+            include: ['index.html'],
+            deleteRemote: false,
+            forcePasv: true
+          }).then(() => {
+            console.log('Deploy done!');
+          }).catch(err => {
+            console.error(err);
+            process.exit(1);
+          });
           "
