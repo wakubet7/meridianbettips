@@ -30,7 +30,7 @@ jobs:
             host: '${{ secrets.FTP_SERVER }}',
             port: 21,
             localRoot: __dirname,
-            remoteRoot: '/public_html/',
+            remoteRoot: 'public_html/',
             include: ['index.html'],
             deleteRemote: false,
             forcePasv: true
