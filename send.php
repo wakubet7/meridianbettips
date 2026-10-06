@@ -9,14 +9,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $full_subject = "Ujumbe Mpya: " . $subject . " - kutoka " . $name;
 
-    $body = "Jina: " . $name . "\n";
+    $body  = "Jina: " . $name . "\n";
     $body .= "Barua Pepe: " . $email . "\n";
     $body .= "Mada: " . $subject . "\n\n";
     $body .= "Ujumbe:\n" . $message;
 
-    $headers  = "From: noreply@meridianbettips.com\r\n";
+    // Use admin email as sender — avoids spam filters
+    $headers  = "From: admin@meridianbettips.com\r\n";
     $headers .= "Reply-To: " . $email . "\r\n";
-    $headers .= "X-Mailer: PHP/" . phpversion();
+    $headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
     if (mail($to, $full_subject, $body, $headers)) {
         echo json_encode(["status" => "success"]);
@@ -25,6 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
 } else {
+    http_response_code(405);
     echo json_encode(["status" => "error", "message" => "Invalid request"]);
 }
 ?>
