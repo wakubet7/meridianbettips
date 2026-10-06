@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = htmlspecialchars(strip_tags($_POST["subject"]));
     $message = htmlspecialchars(strip_tags($_POST["message"]));
 
-    $full_subject = "Ujumbe Mpya: " . $subject . " - kutoka " . $name;
+    $full_subject = $subject . " - kutoka kwa " . $name;
 
     $body  = "Jina: " . $name . "\n";
     $body .= "Barua Pepe: " . $email . "\n";
