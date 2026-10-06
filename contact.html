@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wasiliana Nasi – MeridianBet Tips</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              bg:     '#0e0e0e',
+              card:   '#1a1a1a',
+              border: '#2a2a2a',
+              red:    '#E50914',
+              redHot: '#ff1a25',
+              gold:   '#f5c518',
+              muted:  '#888',
+            }
+          },
+          fontFamily: {
+            display: ['Barlow Condensed', 'sans-serif'],
+            head:    ['Oswald', 'sans-serif'],
+            body:    ['Barlow', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: #0e0e0e;
+      color: #f0f0f0;
+      font-family: 'Barlow', sans-serif;
+      overflow-x: hidden;
+    }
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none; z-index: 0; opacity: .55;
+    }
+    input, textarea, select {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      color: #f0f0f0;
+      border-radius: 8px;
+      padding: 12px 16px;
+      width: 100%;
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.95rem;
+      transition: border-color .2s, box-shadow .2s;
+      outline: none;
+    }
+    input:focus, textarea:focus, select:focus {
+      border-color: #E50914;
+      box-shadow: 0 0 0 3px rgba(229,9,20,.15);
+    }
+    input::placeholder, textarea::placeholder {
+      color: #555;
+    }
+    textarea { resize: vertical; min-height: 140px; }
+    @keyframes pulse-red {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(229,9,20,.6); }
+      50%       { box-shadow: 0 0 0 10px rgba(229,9,20,0); }
+    }
+    .pulse-btn { animation: pulse-red 2s infinite; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0e0e0e; }
+    ::-webkit-scrollbar-thumb { background: #E50914; border-radius: 3px; }
+
+    /* Success message */
+    #success-msg {
+      display: none;
+      animation: fadeIn .5s ease;
+    }
+    #success-msg.show { display: block; }
+    @keyframes fadeIn { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+  </style>
+</head>
+<body class="relative min-h-screen">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 w-full border-b border-brand-border"
+          style="background:rgba(180,0,0,.97); backdrop-filter: blur(12px);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2">
+        <span class="font-display font-black text-2xl tracking-tight text-white">MERIDIAN<span style="color:#f5c518;">BET</span> <span class="text-white text-lg font-head">Tips</span></span>
+      </a>
+      <a href="index.html"
+         class="font-head text-sm tracking-widest text-white hover:text-brand-gold transition uppercase">
+        ← Rudi Nyumbani
+      </a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="relative z-10 max-w-2xl mx-auto px-4 sm:px-6 py-16">
+
+    <!-- Header -->
+    <div class="text-center mb-10">
+      <p class="font-head text-brand-red text-sm tracking-widest uppercase mb-2">📧 MAWASILIANO</p>
+      <h1 class="font-display font-black text-4xl sm:text-5xl text-white uppercase mb-3">
+        Wasiliana <span class="text-brand-red">Nasi</span>
+      </h1>
+      <p class="font-body text-gray-400 text-base">
+        Una swali, maoni, au pendekezo? Tutumie ujumbe — tutajibu haraka iwezekanavyo.
+      </p>
+    </div>
+
+    <!-- Contact Form Card -->
+    <div class="rounded-2xl border border-brand-border overflow-hidden" style="background:#1a1a1a;">
+      <div class="h-1" style="background: linear-gradient(90deg,#E50914,#f5c518);"></div>
+      <div class="p-6 sm:p-8">
+
+        <!-- Success message -->
+        <div id="success-msg" class="mb-6 bg-green-900/40 border border-green-700/50 rounded-xl p-4 text-center">
+          <span class="text-3xl block mb-2">✅</span>
+          <p class="font-head text-green-400 text-lg">Ujumbe Umetumwa!</p>
+          <p class="font-body text-gray-400 text-sm mt-1">Asante! Tutajibu hivi karibuni.</p>
+        </div>
+
+        <!-- Form -->
+        <form id="contact-form" action="https://formspree.io/f/xrpebbrq" method="POST">
+
+          <!-- Jina -->
+          <div class="mb-5">
+            <label class="block font-head text-white text-sm tracking-wide mb-2 uppercase">
+              Jina Lako <span class="text-brand-red">*</span>
+            </label>
+            <input type="text" name="name" placeholder="Andika jina lako..." required />
+          </div>
+
+          <!-- Email -->
+          <div class="mb-5">
+            <label class="block font-head text-white text-sm tracking-wide mb-2 uppercase">
+              Barua Pepe <span class="text-brand-red">*</span>
+            </label>
+            <input type="email" name="email" placeholder="example@email.com" required />
+          </div>
+
+          <!-- Mada -->
+          <div class="mb-5">
+            <label class="block font-head text-white text-sm tracking-wide mb-2 uppercase">
+              Mada
+            </label>
+            <select name="subject">
+              <option value="" disabled selected>Chagua mada...</option>
+              <option value="Utabiri wa Mechi">Utabiri wa Mechi</option>
+              <option value="Bonasi na Promo Code">Bonasi na Promo Code</option>
+              <option value="Kasino ya Mtandaoni">Kasino ya Mtandaoni</option>
+              <option value="Tatizo la Kiufundi">Tatizo la Kiufundi</option>
+              <option value="Mengineyo">Mengineyo</option>
+            </select>
+          </div>
+
+          <!-- Ujumbe -->
+          <div class="mb-6">
+            <label class="block font-head text-white text-sm tracking-wide mb-2 uppercase">
+              Ujumbe Wako <span class="text-brand-red">*</span>
+            </label>
+            <textarea name="message" placeholder="Andika ujumbe wako hapa..." required></textarea>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit"
+                  class="pulse-btn w-full bg-brand-red hover:bg-brand-redHot text-white
+                         font-display font-black text-lg tracking-widest uppercase
+                         py-4 rounded-xl transition-colors">
+            📨 Tuma Ujumbe
+          </button>
+
+        </form>
+
+      </div>
+    </div>
+
+    <!-- Info cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+      <div class="rounded-xl border border-brand-border p-4 text-center" style="background:#1a1a1a;">
+        <span class="text-2xl block mb-2">📧</span>
+        <p class="font-head text-white text-sm">Barua Pepe</p>
+        <p class="font-body text-gray-400 text-xs mt-1">admin@meridianbettips.com</p>
+      </div>
+      <div class="rounded-xl border border-brand-border p-4 text-center" style="background:#1a1a1a;">
+        <span class="text-2xl block mb-2">⏰</span>
+        <p class="font-head text-white text-sm">Muda wa Kujibu</p>
+        <p class="font-body text-gray-400 text-xs mt-1">Ndani ya masaa 24</p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-brand-border py-6 px-4 text-center mt-10" style="background:#0a0a0a;">
+    <p class="font-body text-gray-600 text-xs">
+      © 2026 Meridianbettips. Haki zote zimehifadhiwa. |
+      <span class="text-brand-red">Promo Code: 1029</span>
+    </p>
+  </footer>
+
+  <script>
+    const form = document.getElementById('contact-form');
+    const successMsg = document.getElementById('success-msg');
+
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const btn = form.querySelector('button[type="submit"]');
+      btn.textContent = 'Inatuma...';
+      btn.disabled = true;
+
+      const data = new FormData(form);
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          form.style.display = 'none';
+          successMsg.classList.add('show');
+        } else {
+          btn.textContent = 'Hitilafu! Jaribu tena';
+          btn.disabled = false;
+        }
+      } catch(err) {
+        btn.textContent = 'Hitilafu! Jaribu tena';
+        btn.disabled = false;
+      }
+    });
+  </script>
+
+</body>
+</html>
