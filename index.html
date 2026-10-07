@@ -721,7 +721,7 @@
     <!-- /grid -->
 
     <!-- Show more predictions button (only shown when >6 cards exist) -->
-    <div id="pred-more-wrap" style="display:none; margin-top:1.5rem; text-align:center; width:100%;">
+    <div id="pred-more-wrap" style="display:none; margin-top:1.5rem; width:100%; justify-content:center; align-items:center;">
       <button id="pred-toggle" onclick="togglePredCards()"
               class="font-head text-sm tracking-widest text-brand-red border border-brand-red/40
                      hover:bg-brand-red hover:text-white px-8 py-2.5 rounded-lg transition-all uppercase">
@@ -1711,7 +1711,7 @@
     if (cards.length <= 6) return; // nothing to hide
     // Hide cards beyond first 6
     cards.forEach((c, i) => { if (i >= 6) c.classList.add('pred-hidden'); });
-    wrap.style.display = 'block';
+    wrap.style.display = 'flex';
   })();
 
   let predExpanded = false;
