@@ -720,17 +720,18 @@
       </div>
     <!-- /grid -->
 
-    <!-- Show more predictions button (only shown when >6 cards exist) -->
-    <div id="pred-more-wrap" style="display:none; margin-top:1.5rem; width:100%; justify-content:center; align-items:center;">
-      <button id="pred-toggle" onclick="togglePredCards()"
-              class="font-head text-sm tracking-widest text-brand-red border border-brand-red/40
-                     hover:bg-brand-red hover:text-white px-8 py-2.5 rounded-lg transition-all uppercase">
-        Onyesha Zaidi ▼
-      </button>
-    </div>
-
   </div>
 </section>
+
+<!-- Show more predictions button -->
+<div id="pred-more-wrap" style="display:none; padding:1.5rem 1rem; background:#0e0e0e;">
+  <button id="pred-toggle" onclick="togglePredCards()"
+          style="display:block; margin:0 auto;"
+          class="font-head text-sm tracking-widest text-brand-red border border-brand-red/40
+                 hover:bg-brand-red hover:text-white px-8 py-2.5 rounded-lg transition-all uppercase">
+    Onyesha Zaidi ▼
+  </button>
+</div>
 
 <!-- ══════════════════════════════════════════
      RESULTS TABLE & STATS (after utabiri)
@@ -1711,7 +1712,7 @@
     if (cards.length <= 6) return; // nothing to hide
     // Hide cards beyond first 6
     cards.forEach((c, i) => { if (i >= 6) c.classList.add('pred-hidden'); });
-    wrap.style.display = 'flex';
+    wrap.style.display = 'block';
   })();
 
   let predExpanded = false;
