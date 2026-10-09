@@ -23,7 +23,7 @@
               red:    '#E50914',
               redHot: '#ff1a25',
               gold:   '#f5c518',
-              muted:  '#888',
+              muted:  '#b0b0b0',
             }
           },
           fontFamily: {
@@ -299,7 +299,7 @@
 
         <p class="font-body text-gray-300 text-base sm:text-lg mb-3 leading-relaxed max-w-lg">
           Bashiri michezo ya soka, tenisi, na zaidi — au jaribu bahati yako kwenye Kasino ya Mtandaoni.
-          <strong class="text-white">Odds bora zaidi</strong> zipo hapa
+          <strong class="text-white">Odds bora zaidi</strong> zipo
           <span class="text-brand-red font-semibold">MeridianBet!</span>
         </p>
 
@@ -370,28 +370,28 @@
                style="background:rgba(26,26,26,.9);">
             <div class="text-2xl mb-1">🕐</div>
             <p class="font-display font-black text-white text-lg leading-none">24/7</p>
-            <p class="font-body text-gray-400 text-xs mt-0.5">Msaada wa Moja kwa Moja</p>
+            <p class="font-body text-gray-300 text-xs mt-0.5">Msaada wa Moja kwa Moja</p>
           </div>
 
           <div class="stat-box rounded-xl border border-brand-border p-3 text-center"
                style="background:rgba(26,26,26,.9);">
             <div class="text-2xl mb-1">👥</div>
             <p class="font-display font-black text-brand-gold text-lg leading-none">5M+</p>
-            <p class="font-body text-gray-400 text-xs mt-0.5">Watumiaji Tanzania</p>
+            <p class="font-body text-gray-300 text-xs mt-0.5">Watumiaji Tanzania</p>
           </div>
 
           <div class="stat-box rounded-xl border border-brand-border p-3 text-center"
                style="background:rgba(26,26,26,.9);">
             <div class="text-2xl mb-1">⚽</div>
             <p class="font-display font-black text-brand-red text-lg leading-none">1000+</p>
-            <p class="font-body text-gray-400 text-xs mt-0.5">Michezo kila Siku</p>
+            <p class="font-body text-gray-300 text-xs mt-0.5">Michezo kila Siku</p>
           </div>
 
           <div class="stat-box rounded-xl border border-brand-border p-3 text-center"
                style="background:rgba(26,26,26,.9);">
             <div class="text-2xl mb-1">⚡</div>
             <p class="font-display font-black text-green-400 text-lg leading-none">Haraka</p>
-            <p class="font-body text-gray-400 text-xs mt-0.5">Malipo ya Papo Hapo</p>
+            <p class="font-body text-gray-300 text-xs mt-0.5">Malipo ya Papo Hapo</p>
           </div>
 
         </div><!-- /stat boxes -->
@@ -463,339 +463,329 @@
         </h2>
       </div>
       <div class="text-right">
-        <p class="font-body text-gray-400 text-sm">Soma utabiri wetu, kisha bonyeza Cheza MeridianBet</p>
+        <p class="font-body text-gray-300 text-sm">Bonyeza <span class="text-brand-gold font-bold">+</span> kuongeza mechi kwenye calculator</p>
         <p class="font-head text-brand-gold text-sm tracking-wide mt-1">Promo Code: <strong>1029</strong></p>
       </div>
     </div>
 
-    <!-- Prediction cards grid -->
-        <div id="pred-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Main layout: predictions list + calculator -->
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:items-stretch">
 
-      <!-- Card 1: 16:50 Saudi Pro League -->
-      <div class="pred-card" style="background:#1a1a1a;">
-        <div class="h-1" style="background:linear-gradient(90deg,#E50914,#ff6b35);"></div>
-        <div class="p-4">
-          <div class="flex justify-between items-center mb-3">
-            <span class="font-head text-xs tracking-widest text-brand-muted uppercase">🏆 Saudi Pro League</span>
-            <span class="font-body text-gray-500 text-xs">📅 09 Oct 2026 – 16:50</span>
+      <!-- LEFT: Predictions List (3/5 width) -->
+      <div class="lg:col-span-3 flex flex-col">
+        <div class="rounded-2xl border border-brand-border overflow-hidden flex flex-col flex-1" style="background:#1a1a1a;">
+          <!-- Table header -->
+          <div class="px-4 py-3 border-b border-brand-border flex items-center gap-2" style="background:#111;">
+            <span class="font-head text-xs tracking-widest text-brand-muted uppercase">Mechi</span>
+            <span class="ml-auto font-head text-xs tracking-widest text-brand-muted uppercase">Utabiri</span>
+            <span class="w-16 text-center font-head text-xs tracking-widest text-brand-muted uppercase">Odds</span>
+            <span class="w-8"></span>
           </div>
-          <div class="flex items-center justify-between mb-3">
-            <p class="font-display font-normal text-white text-lg leading-none flex-1">Al Kholood</p>
-            <span class="font-display font-black text-brand-red text-sm mx-3 px-2 py-0.5 rounded border border-brand-red/30 flex-shrink-0" style="background:rgba(229,9,20,.08);">VS</span>
-            <p class="font-display font-normal text-white text-lg leading-none flex-1 text-right">Al Qadsiah</p>
-          </div>
-          <div class="border-t border-brand-border/50 mb-3"></div>
-          <div class="flex items-center justify-between gap-3 mb-3">
-            <div class="flex-1 min-w-0">
-              <p class="font-body text-gray-500 text-xs mb-0.5">Utabiri Wetu</p>
-              <p class="font-head text-brand-gold text-sm leading-tight">Al Qadsiah Kushinda (2)</p>
-            </div>
-            <div class="text-right flex-shrink-0">
-              <p class="font-body text-gray-500 text-xs mb-0.5">Odds</p>
-              <span class="font-display font-black text-brand-gold text-xl">1.50</span>
-            </div>
-          </div>
-          <a href="https://a.meridianbet.co.tz/c/MwDx0D" target="_blank" rel="noopener"
-             class="block text-center bg-brand-red hover:bg-brand-redHot text-white font-head
-                    font-semibold tracking-widest py-2 rounded-lg transition-colors uppercase text-xs">
-            Cheza MeridianBet →
-          </a>
-        </div>
-      </div>
-      <!-- Card 2: 19:45 Algeria Ligue 1 -->
-      <div class="pred-card" style="background:#1a1a1a;">
-        <div class="h-1" style="background:linear-gradient(90deg,#E50914,#ff6b35);"></div>
-        <div class="p-4">
-          <div class="flex justify-between items-center mb-3">
-            <span class="font-head text-xs tracking-widest text-brand-muted uppercase">🏆 Algeria Ligue 1</span>
-            <span class="font-body text-gray-500 text-xs">📅 09 Oct 2026 – 19:45</span>
-          </div>
-          <div class="flex items-center justify-between mb-3">
-            <p class="font-display font-normal text-white text-lg leading-none flex-1">Kabylie</p>
-            <span class="font-display font-black text-brand-red text-sm mx-3 px-2 py-0.5 rounded border border-brand-red/30 flex-shrink-0" style="background:rgba(229,9,20,.08);">VS</span>
-            <p class="font-display font-normal text-white text-lg leading-none flex-1 text-right">ASO Chlef</p>
-          </div>
-          <div class="border-t border-brand-border/50 mb-3"></div>
-          <div class="flex items-center justify-between gap-3 mb-3">
-            <div class="flex-1 min-w-0">
-              <p class="font-body text-gray-500 text-xs mb-0.5">Utabiri Wetu</p>
-              <p class="font-head text-brand-gold text-sm leading-tight">Kabylie Kushinda (1)</p>
-            </div>
-            <div class="text-right flex-shrink-0">
-              <p class="font-body text-gray-500 text-xs mb-0.5">Odds</p>
-              <span class="font-display font-black text-brand-gold text-xl">1.42</span>
-            </div>
-          </div>
-          <a href="https://a.meridianbet.co.tz/c/MwDx0D" target="_blank" rel="noopener"
-             class="block text-center bg-brand-red hover:bg-brand-redHot text-white font-head
-                    font-semibold tracking-widest py-2 rounded-lg transition-colors uppercase text-xs">
-            Cheza MeridianBet →
-          </a>
-        </div>
-      </div>
-      <!-- Card 3: 21:00 Eredivisie -->
-      <div class="pred-card" style="background:#1a1a1a;">
-        <div class="h-1" style="background:linear-gradient(90deg,#E50914,#ff6b35);"></div>
-        <div class="p-4">
-          <div class="flex justify-between items-center mb-3">
-            <span class="font-head text-xs tracking-widest text-brand-muted uppercase">🏆 Eredivisie</span>
-            <span class="font-body text-gray-500 text-xs">📅 09 Oct 2026 – 21:00</span>
-          </div>
-          <div class="flex items-center justify-between mb-3">
-            <p class="font-display font-normal text-white text-lg leading-none flex-1">PSV</p>
-            <span class="font-display font-black text-brand-red text-sm mx-3 px-2 py-0.5 rounded border border-brand-red/30 flex-shrink-0" style="background:rgba(229,9,20,.08);">VS</span>
-            <p class="font-display font-normal text-white text-lg leading-none flex-1 text-right">Heerenveen</p>
-          </div>
-          <div class="border-t border-brand-border/50 mb-3"></div>
-          <div class="flex items-center justify-between gap-3 mb-3">
-            <div class="flex-1 min-w-0">
-              <p class="font-body text-gray-500 text-xs mb-0.5">Utabiri Wetu</p>
-              <p class="font-head text-brand-gold text-sm leading-tight">PSV Kushinda (1)</p>
-            </div>
-            <div class="text-right flex-shrink-0">
-              <p class="font-body text-gray-500 text-xs mb-0.5">Odds</p>
-              <span class="font-display font-black text-brand-gold text-xl">1.25</span>
-            </div>
-          </div>
-          <a href="https://a.meridianbet.co.tz/c/MwDx0D" target="_blank" rel="noopener"
-             class="block text-center bg-brand-red hover:bg-brand-redHot text-white font-head
-                    font-semibold tracking-widest py-2 rounded-lg transition-colors uppercase text-xs">
-            Cheza MeridianBet →
-          </a>
-        </div>
-      </div>
-      <!-- Card 4: 21:00 Saudi Pro League -->
-      <div class="pred-card" style="background:#1a1a1a;">
-        <div class="h-1" style="background:linear-gradient(90deg,#E50914,#ff6b35);"></div>
-        <div class="p-4">
-          <div class="flex justify-between items-center mb-3">
-            <span class="font-head text-xs tracking-widest text-brand-muted uppercase">🏆 Saudi Pro League</span>
-            <span class="font-body text-gray-500 text-xs">📅 09 Oct 2026 – 21:00</span>
-          </div>
-          <div class="flex items-center justify-between mb-3">
-            <p class="font-display font-normal text-white text-lg leading-none flex-1">Al Nassr</p>
-            <span class="font-display font-black text-brand-red text-sm mx-3 px-2 py-0.5 rounded border border-brand-red/30 flex-shrink-0" style="background:rgba(229,9,20,.08);">VS</span>
-            <p class="font-display font-normal text-white text-lg leading-none flex-1 text-right">Al Diriyah</p>
-          </div>
-          <div class="border-t border-brand-border/50 mb-3"></div>
-          <div class="flex items-center justify-between gap-3 mb-3">
-            <div class="flex-1 min-w-0">
-              <p class="font-body text-gray-500 text-xs mb-0.5">Utabiri Wetu</p>
-              <p class="font-head text-brand-gold text-sm leading-tight">Al Nassr Kushinda (1)</p>
-            </div>
-            <div class="text-right flex-shrink-0">
-              <p class="font-body text-gray-500 text-xs mb-0.5">Odds</p>
-              <span class="font-display font-black text-brand-gold text-xl">1.39</span>
-            </div>
-          </div>
-          <a href="https://a.meridianbet.co.tz/c/MwDx0D" target="_blank" rel="noopener"
-             class="block text-center bg-brand-red hover:bg-brand-redHot text-white font-head
-                    font-semibold tracking-widest py-2 rounded-lg transition-colors uppercase text-xs">
-            Cheza MeridianBet →
-          </a>
-        </div>
-      </div>
-      <!-- Card 5: 21:30 Bundesliga -->
-      <div class="pred-card" style="background:#1a1a1a;">
-        <div class="h-1" style="background:linear-gradient(90deg,#E50914,#ff6b35);"></div>
-        <div class="p-4">
-          <div class="flex justify-between items-center mb-3">
-            <span class="font-head text-xs tracking-widest text-brand-muted uppercase">🏆 Bundesliga</span>
-            <span class="font-body text-gray-500 text-xs">📅 09 Oct 2026 – 21:30</span>
-          </div>
-          <div class="flex items-center justify-between mb-3">
-            <p class="font-display font-normal text-white text-lg leading-none flex-1">Dortmund</p>
-            <span class="font-display font-black text-brand-red text-sm mx-3 px-2 py-0.5 rounded border border-brand-red/30 flex-shrink-0" style="background:rgba(229,9,20,.08);">VS</span>
-            <p class="font-display font-normal text-white text-lg leading-none flex-1 text-right">Werder Bremen</p>
-          </div>
-          <div class="border-t border-brand-border/50 mb-3"></div>
-          <div class="flex items-center justify-between gap-3 mb-3">
-            <div class="flex-1 min-w-0">
-              <p class="font-body text-gray-500 text-xs mb-0.5">Utabiri Wetu</p>
-              <p class="font-head text-brand-gold text-sm leading-tight">Dortmund Kushinda (1)</p>
-            </div>
-            <div class="text-right flex-shrink-0">
-              <p class="font-body text-gray-500 text-xs mb-0.5">Odds</p>
-              <span class="font-display font-black text-brand-gold text-xl">1.35</span>
-            </div>
-          </div>
-          <a href="https://a.meridianbet.co.tz/c/MwDx0D" target="_blank" rel="noopener"
-             class="block text-center bg-brand-red hover:bg-brand-redHot text-white font-head
-                    font-semibold tracking-widest py-2 rounded-lg transition-colors uppercase text-xs">
-            Cheza MeridianBet →
-          </a>
-        </div>
-      </div>
-      <!-- Card 6: 21:45 Ligue 1 -->
-      <div class="pred-card" style="background:#1a1a1a;">
-        <div class="h-1" style="background:linear-gradient(90deg,#E50914,#ff6b35);"></div>
-        <div class="p-4">
-          <div class="flex justify-between items-center mb-3">
-            <span class="font-head text-xs tracking-widest text-brand-muted uppercase">🏆 Ligue 1</span>
-            <span class="font-body text-gray-500 text-xs">📅 09 Oct 2026 – 21:45</span>
-          </div>
-          <div class="flex items-center justify-between mb-3">
-            <p class="font-display font-normal text-white text-lg leading-none flex-1">Lens</p>
-            <span class="font-display font-black text-brand-red text-sm mx-3 px-2 py-0.5 rounded border border-brand-red/30 flex-shrink-0" style="background:rgba(229,9,20,.08);">VS</span>
-            <p class="font-display font-normal text-white text-lg leading-none flex-1 text-right">Lyon</p>
-          </div>
-          <div class="border-t border-brand-border/50 mb-3"></div>
-          <div class="flex items-center justify-between gap-3 mb-3">
-            <div class="flex-1 min-w-0">
-              <p class="font-body text-gray-500 text-xs mb-0.5">Utabiri Wetu</p>
-              <p class="font-head text-brand-gold text-sm leading-tight">Timu Yoyote Kushinda (DC 12)</p>
-            </div>
-            <div class="text-right flex-shrink-0">
-              <p class="font-body text-gray-500 text-xs mb-0.5">Odds</p>
-              <span class="font-display font-black text-brand-gold text-xl">1.29</span>
-            </div>
-          </div>
-          <a href="https://a.meridianbet.co.tz/c/MwDx0D" target="_blank" rel="noopener"
-             class="block text-center bg-brand-red hover:bg-brand-redHot text-white font-head
-                    font-semibold tracking-widest py-2 rounded-lg transition-colors uppercase text-xs">
-            Cheza MeridianBet →
-          </a>
-        </div>
-      </div>
-      <!-- Card 7: 21:45 Jupiler Pro League -->
-      <div class="pred-card pred-hidden" style="background:#1a1a1a;">
-        <div class="h-1" style="background:linear-gradient(90deg,#E50914,#ff6b35);"></div>
-        <div class="p-4">
-          <div class="flex justify-between items-center mb-3">
-            <span class="font-head text-xs tracking-widest text-brand-muted uppercase">🏆 Jupiler Pro League</span>
-            <span class="font-body text-gray-500 text-xs">📅 09 Oct 2026 – 21:45</span>
-          </div>
-          <div class="flex items-center justify-between mb-3">
-            <p class="font-display font-normal text-white text-lg leading-none flex-1">Bereven</p>
-            <span class="font-display font-black text-brand-red text-sm mx-3 px-2 py-0.5 rounded border border-brand-red/30 flex-shrink-0" style="background:rgba(229,9,20,.08);">VS</span>
-            <p class="font-display font-normal text-white text-lg leading-none flex-1 text-right">Lommel SK</p>
-          </div>
-          <div class="border-t border-brand-border/50 mb-3"></div>
-          <div class="flex items-center justify-between gap-3 mb-3">
-            <div class="flex-1 min-w-0">
-              <p class="font-body text-gray-500 text-xs mb-0.5">Utabiri Wetu</p>
-              <p class="font-head text-brand-gold text-sm leading-tight">Sare au Nyumbani (DC 1X)</p>
-            </div>
-            <div class="text-right flex-shrink-0">
-              <p class="font-body text-gray-500 text-xs mb-0.5">Odds</p>
-              <span class="font-display font-black text-brand-gold text-xl">1.23</span>
-            </div>
-          </div>
-          <a href="https://a.meridianbet.co.tz/c/MwDx0D" target="_blank" rel="noopener"
-             class="block text-center bg-brand-red hover:bg-brand-redHot text-white font-head
-                    font-semibold tracking-widest py-2 rounded-lg transition-colors uppercase text-xs">
-            Cheza MeridianBet →
-          </a>
-        </div>
-      </div>
-      <!-- Card 8: 22:00 Algeria Ligue 1 -->
-      <div class="pred-card pred-hidden" style="background:#1a1a1a;">
-        <div class="h-1" style="background:linear-gradient(90deg,#E50914,#ff6b35);"></div>
-        <div class="p-4">
-          <div class="flex justify-between items-center mb-3">
-            <span class="font-head text-xs tracking-widest text-brand-muted uppercase">🏆 Algeria Ligue 1</span>
-            <span class="font-body text-gray-500 text-xs">📅 09 Oct 2026 – 22:00</span>
-          </div>
-          <div class="flex items-center justify-between mb-3">
-            <p class="font-display font-normal text-white text-lg leading-none flex-1">MC Alger</p>
-            <span class="font-display font-black text-brand-red text-sm mx-3 px-2 py-0.5 rounded border border-brand-red/30 flex-shrink-0" style="background:rgba(229,9,20,.08);">VS</span>
-            <p class="font-display font-normal text-white text-lg leading-none flex-1 text-right">Temouchent</p>
-          </div>
-          <div class="border-t border-brand-border/50 mb-3"></div>
-          <div class="flex items-center justify-between gap-3 mb-3">
-            <div class="flex-1 min-w-0">
-              <p class="font-body text-gray-500 text-xs mb-0.5">Utabiri Wetu</p>
-              <p class="font-head text-brand-gold text-sm leading-tight">MC Alger Kushinda (1)</p>
-            </div>
-            <div class="text-right flex-shrink-0">
-              <p class="font-body text-gray-500 text-xs mb-0.5">Odds</p>
-              <span class="font-display font-black text-brand-gold text-xl">1.17</span>
-            </div>
-          </div>
-          <a href="https://a.meridianbet.co.tz/c/MwDx0D" target="_blank" rel="noopener"
-             class="block text-center bg-brand-red hover:bg-brand-redHot text-white font-head
-                    font-semibold tracking-widest py-2 rounded-lg transition-colors uppercase text-xs">
-            Cheza MeridianBet →
-          </a>
-        </div>
-      </div>
-      <!-- Card 9: 22:00 La Liga -->
-      <div class="pred-card pred-hidden" style="background:#1a1a1a;">
-        <div class="h-1" style="background:linear-gradient(90deg,#E50914,#ff6b35);"></div>
-        <div class="p-4">
-          <div class="flex justify-between items-center mb-3">
-            <span class="font-head text-xs tracking-widest text-brand-muted uppercase">🏆 La Liga</span>
-            <span class="font-body text-gray-500 text-xs">📅 09 Oct 2026 – 22:00</span>
-          </div>
-          <div class="flex items-center justify-between mb-3">
-            <p class="font-display font-normal text-white text-lg leading-none flex-1">Malaga</p>
-            <span class="font-display font-black text-brand-red text-sm mx-3 px-2 py-0.5 rounded border border-brand-red/30 flex-shrink-0" style="background:rgba(229,9,20,.08);">VS</span>
-            <p class="font-display font-normal text-white text-lg leading-none flex-1 text-right">Espanyol</p>
-          </div>
-          <div class="border-t border-brand-border/50 mb-3"></div>
-          <div class="flex items-center justify-between gap-3 mb-3">
-            <div class="flex-1 min-w-0">
-              <p class="font-body text-gray-500 text-xs mb-0.5">Utabiri Wetu</p>
-              <p class="font-head text-brand-gold text-sm leading-tight">Zaidi ya Magoli 1.5 (Over 1.5)</p>
-            </div>
-            <div class="text-right flex-shrink-0">
-              <p class="font-body text-gray-500 text-xs mb-0.5">Odds</p>
-              <span class="font-display font-black text-brand-gold text-xl">1.33</span>
-            </div>
-          </div>
-          <a href="https://a.meridianbet.co.tz/c/MwDx0D" target="_blank" rel="noopener"
-             class="block text-center bg-brand-red hover:bg-brand-redHot text-white font-head
-                    font-semibold tracking-widest py-2 rounded-lg transition-colors uppercase text-xs">
-            Cheza MeridianBet →
-          </a>
-        </div>
-      </div>
-      <!-- Card 10: 22:00 Championship -->
-      <div class="pred-card pred-hidden" style="background:#1a1a1a;">
-        <div class="h-1" style="background:linear-gradient(90deg,#E50914,#ff6b35);"></div>
-        <div class="p-4">
-          <div class="flex justify-between items-center mb-3">
-            <span class="font-head text-xs tracking-widest text-brand-muted uppercase">🏆 Championship</span>
-            <span class="font-body text-gray-500 text-xs">📅 09 Oct 2026 – 22:00</span>
-          </div>
-          <div class="flex items-center justify-between mb-3">
-            <p class="font-display font-normal text-white text-lg leading-none flex-1">West Ham</p>
-            <span class="font-display font-black text-brand-red text-sm mx-3 px-2 py-0.5 rounded border border-brand-red/30 flex-shrink-0" style="background:rgba(229,9,20,.08);">VS</span>
-            <p class="font-display font-normal text-white text-lg leading-none flex-1 text-right">Queen Park</p>
-          </div>
-          <div class="border-t border-brand-border/50 mb-3"></div>
-          <div class="flex items-center justify-between gap-3 mb-3">
-            <div class="flex-1 min-w-0">
-              <p class="font-body text-gray-500 text-xs mb-0.5">Utabiri Wetu</p>
-              <p class="font-head text-brand-gold text-sm leading-tight">West Ham Kushinda (1)</p>
-            </div>
-            <div class="text-right flex-shrink-0">
-              <p class="font-body text-gray-500 text-xs mb-0.5">Odds</p>
-              <span class="font-display font-black text-brand-gold text-xl">1.50</span>
-            </div>
-          </div>
-          <a href="https://a.meridianbet.co.tz/c/MwDx0D" target="_blank" rel="noopener"
-             class="block text-center bg-brand-red hover:bg-brand-redHot text-white font-head
-                    font-semibold tracking-widest py-2 rounded-lg transition-colors uppercase text-xs">
-            Cheza MeridianBet →
-          </a>
-        </div>
-      </div>
+          <!-- Rows -->
+          <div id="pred-list" class="flex-1">
 
-<!-- /grid -->
+            <!-- Row 1 -->
+            <div class="pred-row flex items-center gap-3 px-4 py-3 border-b border-white/10 hover:bg-white/[.02] transition-colors">
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-0.5">
+                  <span class="font-head text-xs tracking-wide" style="color:#22c55e;">Saudi Pro League</span>
+                  <span class="font-body text-gray-300 text-xs">16:50</span>
+                </div>
+                <p class="font-body text-white text-sm font-semibold truncate">Al Kholood vs Al Qadsiah</p>
+              </div>
+              <div class="text-right flex-shrink-0">
+                <p class="font-head text-brand-gold text-xs leading-tight">Al Qadsiah (2)</p>
+              </div>
+              <div class="w-14 text-center flex-shrink-0">
+                <span class="font-display font-black text-brand-gold text-base">1.50</span>
+              </div>
+              <button onclick="addToCalc('Al Kholood vs Al Qadsiah', 1.50, this)"
+                      class="w-8 h-8 flex-shrink-0 rounded-full border border-brand-red/50 text-brand-red hover:bg-brand-red hover:text-white transition-all flex items-center justify-center font-bold text-sm">+</button>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="pred-row flex items-center gap-3 px-4 py-3 border-b border-white/10 hover:bg-white/[.02] transition-colors">
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-0.5">
+                  <span class="font-head text-xs tracking-wide" style="color:#22c55e;">Algeria Ligue 1</span>
+                  <span class="font-body text-gray-300 text-xs">19:45</span>
+                </div>
+                <p class="font-body text-white text-sm font-semibold truncate">Kabylie vs ASO Chlef</p>
+              </div>
+              <div class="text-right flex-shrink-0">
+                <p class="font-head text-brand-gold text-xs leading-tight">Kabylie (1)</p>
+              </div>
+              <div class="w-14 text-center flex-shrink-0">
+                <span class="font-display font-black text-brand-gold text-base">1.42</span>
+              </div>
+              <button onclick="addToCalc('Kabylie vs ASO Chlef', 1.42, this)"
+                      class="w-8 h-8 flex-shrink-0 rounded-full border border-brand-red/50 text-brand-red hover:bg-brand-red hover:text-white transition-all flex items-center justify-center font-bold text-sm">+</button>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="pred-row flex items-center gap-3 px-4 py-3 border-b border-white/10 hover:bg-white/[.02] transition-colors">
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-0.5">
+                  <span class="font-head text-xs tracking-wide" style="color:#22c55e;">Eredivisie</span>
+                  <span class="font-body text-gray-300 text-xs">21:00</span>
+                </div>
+                <p class="font-body text-white text-sm font-semibold truncate">PSV vs Heerenveen</p>
+              </div>
+              <div class="text-right flex-shrink-0">
+                <p class="font-head text-brand-gold text-xs leading-tight">PSV (1)</p>
+              </div>
+              <div class="w-14 text-center flex-shrink-0">
+                <span class="font-display font-black text-brand-gold text-base">1.25</span>
+              </div>
+              <button onclick="addToCalc('PSV vs Heerenveen', 1.25, this)"
+                      class="w-8 h-8 flex-shrink-0 rounded-full border border-brand-red/50 text-brand-red hover:bg-brand-red hover:text-white transition-all flex items-center justify-center font-bold text-sm">+</button>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="pred-row flex items-center gap-3 px-4 py-3 border-b border-white/10 hover:bg-white/[.02] transition-colors">
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-0.5">
+                  <span class="font-head text-xs tracking-wide" style="color:#22c55e;">Saudi Pro League</span>
+                  <span class="font-body text-gray-300 text-xs">21:00</span>
+                </div>
+                <p class="font-body text-white text-sm font-semibold truncate">Al Nassr vs Al Diriyah</p>
+              </div>
+              <div class="text-right flex-shrink-0">
+                <p class="font-head text-brand-gold text-xs leading-tight">Al Nassr (1)</p>
+              </div>
+              <div class="w-14 text-center flex-shrink-0">
+                <span class="font-display font-black text-brand-gold text-base">1.39</span>
+              </div>
+              <button onclick="addToCalc('Al Nassr vs Al Diriyah', 1.39, this)"
+                      class="w-8 h-8 flex-shrink-0 rounded-full border border-brand-red/50 text-brand-red hover:bg-brand-red hover:text-white transition-all flex items-center justify-center font-bold text-sm">+</button>
+            </div>
+
+            <!-- Row 5 -->
+            <div class="pred-row flex items-center gap-3 px-4 py-3 border-b border-white/10 hover:bg-white/[.02] transition-colors">
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-0.5">
+                  <span class="font-head text-xs tracking-wide" style="color:#22c55e;">Bundesliga</span>
+                  <span class="font-body text-gray-300 text-xs">21:30</span>
+                </div>
+                <p class="font-body text-white text-sm font-semibold truncate">Dortmund vs Werder Bremen</p>
+              </div>
+              <div class="text-right flex-shrink-0">
+                <p class="font-head text-brand-gold text-xs leading-tight">Dortmund (1)</p>
+              </div>
+              <div class="w-14 text-center flex-shrink-0">
+                <span class="font-display font-black text-brand-gold text-base">1.35</span>
+              </div>
+              <button onclick="addToCalc('Dortmund vs Werder Bremen', 1.35, this)"
+                      class="w-8 h-8 flex-shrink-0 rounded-full border border-brand-red/50 text-brand-red hover:bg-brand-red hover:text-white transition-all flex items-center justify-center font-bold text-sm">+</button>
+            </div>
+
+            <!-- Row 6 -->
+            <div class="pred-row flex items-center gap-3 px-4 py-3 border-b border-white/10 hover:bg-white/[.02] transition-colors">
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-0.5">
+                  <span class="font-head text-xs tracking-wide" style="color:#22c55e;">Ligue 1</span>
+                  <span class="font-body text-gray-300 text-xs">21:45</span>
+                </div>
+                <p class="font-body text-white text-sm font-semibold truncate">Lens vs Lyon</p>
+              </div>
+              <div class="text-right flex-shrink-0">
+                <p class="font-head text-brand-gold text-xs leading-tight">DC 12</p>
+              </div>
+              <div class="w-14 text-center flex-shrink-0">
+                <span class="font-display font-black text-brand-gold text-base">1.29</span>
+              </div>
+              <button onclick="addToCalc('Lens vs Lyon', 1.29, this)"
+                      class="w-8 h-8 flex-shrink-0 rounded-full border border-brand-red/50 text-brand-red hover:bg-brand-red hover:text-white transition-all flex items-center justify-center font-bold text-sm">+</button>
+            </div>
+
+            <!-- Row 7 -->
+            <div class="pred-row flex items-center gap-3 px-4 py-3 border-b border-white/10 hover:bg-white/[.02] transition-colors">
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-0.5">
+                  <span class="font-head text-xs tracking-wide" style="color:#22c55e;">Jupiler Pro League</span>
+                  <span class="font-body text-gray-300 text-xs">21:45</span>
+                </div>
+                <p class="font-body text-white text-sm font-semibold truncate">Bereven vs Lommel SK</p>
+              </div>
+              <div class="text-right flex-shrink-0">
+                <p class="font-head text-brand-gold text-xs leading-tight">DC 1X</p>
+              </div>
+              <div class="w-14 text-center flex-shrink-0">
+                <span class="font-display font-black text-brand-gold text-base">1.23</span>
+              </div>
+              <button onclick="addToCalc('Bereven vs Lommel SK', 1.23, this)"
+                      class="w-8 h-8 flex-shrink-0 rounded-full border border-brand-red/50 text-brand-red hover:bg-brand-red hover:text-white transition-all flex items-center justify-center font-bold text-sm">+</button>
+            </div>
+
+            <!-- Row 8 -->
+            <div class="pred-row flex items-center gap-3 px-4 py-3 border-b border-white/10 hover:bg-white/[.02] transition-colors">
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-0.5">
+                  <span class="font-head text-xs tracking-wide" style="color:#22c55e;">Algeria Ligue 1</span>
+                  <span class="font-body text-gray-300 text-xs">22:00</span>
+                </div>
+                <p class="font-body text-white text-sm font-semibold truncate">MC Alger vs Temouchent</p>
+              </div>
+              <div class="text-right flex-shrink-0">
+                <p class="font-head text-brand-gold text-xs leading-tight">MC Alger (1)</p>
+              </div>
+              <div class="w-14 text-center flex-shrink-0">
+                <span class="font-display font-black text-brand-gold text-base">1.17</span>
+              </div>
+              <button onclick="addToCalc('MC Alger vs Temouchent', 1.17, this)"
+                      class="w-8 h-8 flex-shrink-0 rounded-full border border-brand-red/50 text-brand-red hover:bg-brand-red hover:text-white transition-all flex items-center justify-center font-bold text-sm">+</button>
+            </div>
+
+            <!-- Row 9 -->
+            <div class="pred-row pred-row-extra hidden flex items-center gap-3 px-4 py-3 border-b border-white/10 hover:bg-white/[.02] transition-colors">
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-0.5">
+                  <span class="font-head text-xs tracking-wide" style="color:#22c55e;">La Liga</span>
+                  <span class="font-body text-gray-300 text-xs">22:00</span>
+                </div>
+                <p class="font-body text-white text-sm font-semibold truncate">Malaga vs Espanyol</p>
+              </div>
+              <div class="text-right flex-shrink-0">
+                <p class="font-head text-brand-gold text-xs leading-tight">Over 1.5</p>
+              </div>
+              <div class="w-14 text-center flex-shrink-0">
+                <span class="font-display font-black text-brand-gold text-base">1.33</span>
+              </div>
+              <button onclick="addToCalc('Malaga vs Espanyol', 1.33, this)"
+                      class="w-8 h-8 flex-shrink-0 rounded-full border border-brand-red/50 text-brand-red hover:bg-brand-red hover:text-white transition-all flex items-center justify-center font-bold text-sm">+</button>
+            </div>
+
+            <!-- Row 10 -->
+            <div class="pred-row pred-row-extra hidden flex items-center gap-3 px-4 py-3 hover:bg-white/[.02] transition-colors">
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-0.5">
+                  <span class="font-head text-xs tracking-wide" style="color:#22c55e;">Championship</span>
+                  <span class="font-body text-gray-300 text-xs">22:00</span>
+                </div>
+                <p class="font-body text-white text-sm font-semibold truncate">West Ham vs Queen Park</p>
+              </div>
+              <div class="text-right flex-shrink-0">
+                <p class="font-head text-brand-gold text-xs leading-tight">West Ham (1)</p>
+              </div>
+              <div class="w-14 text-center flex-shrink-0">
+                <span class="font-display font-black text-brand-gold text-base">1.50</span>
+              </div>
+              <button onclick="addToCalc('West Ham vs Queen Park', 1.50, this)"
+                      class="w-8 h-8 flex-shrink-0 rounded-full border border-brand-red/50 text-brand-red hover:bg-brand-red hover:text-white transition-all flex items-center justify-center font-bold text-sm">+</button>
+            </div>
+
+          </div><!-- /pred-list -->
+
+          <!-- Show more button -->
+          <div id="pred-list-more-wrap" class="px-4 py-2 text-center" style="background:#111;border-top:1px solid rgba(229,9,20,0.35);">
+            <button id="pred-list-toggle" onclick="togglePredList()"
+                    class="font-head text-xs tracking-widest text-brand-red hover:text-white transition uppercase">
+              Onyesha Zaidi ▼
+            </button>
+          </div>
+          <!-- Footer link -->
+          <div class="px-4 py-3 border-t border-brand-border text-center" style="background:#111;">
+            <a href="https://a.meridianbet.co.tz/c/MwDx0D" target="_blank" rel="noopener"
+               class="font-head text-xs tracking-widest text-brand-red hover:text-white transition uppercase">
+              Cheza MeridianBet → CODE 1029
+            </a>
+          </div>
+        </div>
+      </div><!-- /left col -->
+
+      <!-- RIGHT: Bet Calculator (2/5 width) -->
+      <div class="lg:col-span-2 flex flex-col">
+        <div class="rounded-2xl border border-brand-border h-full flex flex-col" style="background:#1a1a1a;">
+          <!-- Header -->
+          <div class="px-5 py-4 border-b border-brand-border" style="background:#111; border-radius:1rem 1rem 0 0;">
+            <div class="flex items-center justify-between">
+              <p class="font-head text-sm tracking-widest text-white uppercase">🧮 Calculator ya Dau</p>
+              <button onclick="clearCalc()"
+                      class="font-head text-xs text-brand-muted hover:text-brand-red transition tracking-wide uppercase">Futa Yote</button>
+            </div>
+          </div>
+
+          <!-- Selected matches -->
+          <div id="calc-matches" class="px-5 py-3 space-y-2 min-h-[80px]">
+            <p id="calc-empty" class="font-body text-gray-300 text-sm text-center py-4">Bonyeza <span class="text-brand-gold font-bold">+</span> kuongeza mechi</p>
+          </div>
+
+          <!-- Divider -->
+          <div class="border-t border-brand-border mx-5"></div>
+
+          <!-- Total odds -->
+          <div class="px-5 py-3 flex items-center justify-between">
+            <span class="font-head text-xs tracking-widest text-brand-muted uppercase">Odds Jumla</span>
+            <span id="calc-total-odds" class="font-display font-black text-brand-gold text-2xl">–</span>
+          </div>
+
+          <div class="border-t border-brand-border mx-5"></div>
+
+          <!-- Inputs -->
+          <div class="px-5 py-4 space-y-4">
+            <!-- Dau -->
+            <div>
+              <label class="font-head text-xs tracking-widest text-brand-muted uppercase block mb-1.5">Dau (TZS)</label>
+              <input id="calc-stake" type="number" value="2000" min="100" step="100"
+                     oninput="updateCalc()"
+                     class="w-full rounded-lg px-4 py-2.5 font-body text-white text-sm border border-brand-border focus:border-brand-red focus:outline-none transition"
+                     style="background:#0e0e0e;">
+            </div>
+            <!-- Kodi -->
+            <div>
+              <label class="font-head text-xs tracking-widest text-brand-muted uppercase block mb-1.5">Kodi / Tax (%)</label>
+              <input id="calc-tax" type="number" value="10" min="0" max="100" step="0.5"
+                     oninput="updateCalc()"
+                     class="w-full rounded-lg px-4 py-2.5 font-body text-white text-sm border border-brand-border focus:border-brand-red focus:outline-none transition"
+                     style="background:#0e0e0e;">
+            </div>
+            <!-- Manual odds -->
+            <div>
+              <label class="font-head text-xs tracking-widest text-brand-muted uppercase block mb-1.5">Ongeza Odds Zako</label>
+              <div class="flex gap-2">
+                <input id="calc-manual-odds" type="number" value="" min="1" step="0.01" placeholder="mfano: 2.50"
+                       class="flex-1 rounded-lg px-3 py-2.5 font-body text-white text-sm border border-brand-border focus:border-brand-gold focus:outline-none transition"
+                       style="background:#0e0e0e;">
+                <button onclick="addManualOdds()"
+                        class="flex-shrink-0 px-3 py-2.5 rounded-lg bg-brand-gold/20 border border-brand-gold/40 text-brand-gold hover:bg-brand-gold hover:text-black font-head text-xs tracking-wide transition">
+                  + Ongeza
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="border-t border-brand-border mx-5"></div>
+
+          <!-- Results -->
+          <div class="px-5 py-4 space-y-3">
+            <div class="flex justify-between items-center">
+              <span class="font-body text-gray-300 text-sm">Ushindi wa Jumla</span>
+              <span id="calc-gross" class="font-display font-black text-white text-lg">–</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="font-body text-gray-300 text-sm">Kodi (Tax)</span>
+              <span id="calc-tax-amt" class="font-body text-brand-red text-sm">–</span>
+            </div>
+            <div class="flex justify-between items-center border-t border-brand-border pt-3">
+              <span class="font-head text-sm tracking-wide text-white uppercase">Mapato Halisi</span>
+              <span id="calc-net" class="font-display font-black text-brand-gold text-2xl">–</span>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <div class="px-5 pb-5">
+            <a href="https://a.meridianbet.co.tz/c/MwDx0D" target="_blank" rel="noopener"
+               class="block text-center pulse-btn bg-brand-red hover:bg-brand-redHot text-white font-head font-semibold tracking-widest py-3 rounded-xl transition-colors uppercase text-sm">
+              Weka Dau MeridianBet →
+            </a>
+          </div>
+        </div>
+      </div><!-- /right col -->
+
+    </div><!-- /main grid -->
 
   </div>
 </section>
-
-<!-- Show more predictions button -->
-<div id="pred-more-wrap" style="display:none; padding:0.5rem 1rem 1.5rem; background:#0e0e0e;">
-  <button id="pred-toggle" onclick="togglePredCards()"
-          style="display:block; margin:0 auto;"
-          class="font-head text-sm tracking-widest text-brand-red border border-brand-red/40
-                 hover:bg-brand-red hover:text-white px-8 py-2.5 rounded-lg transition-all uppercase">
-    Onyesha Zaidi ▼
-  </button>
-</div>
 
 <!-- ══════════════════════════════════════════
      RESULTS TABLE & STATS (after utabiri)
@@ -816,7 +806,7 @@
           <div class="overflow-x-auto flex-1">
             <table class="w-full text-sm font-body">
               <thead>
-                <tr style="background:#111;" class="text-brand-muted text-xs font-head tracking-widest uppercase">
+                <tr style="background:#111;" class="text-gray-300 text-xs font-head tracking-widest uppercase">
                   <th class="px-4 py-3 text-left">Tarehe</th>
                   <th class="px-4 py-3 text-left">Mechi</th>
                   <th class="px-4 py-3 text-left">Utabiri Wetu</th>
@@ -826,378 +816,378 @@
               </thead>
               <tbody id="results-table">
                 <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">08 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">08 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Rouisset vs USM Alger</td>
                   <td class="px-4 py-3 text-gray-300">DC 12 — 1.34</td>
                   <td class="px-4 py-3 text-white font-bold">1 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">08 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">08 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Saoura vs Olympique Akbou</td>
                   <td class="px-4 py-3 text-gray-300">DC 12 — 1.31</td>
                   <td class="px-4 py-3 text-white font-bold">0 – 0</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
                 <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">08 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">08 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Oran vs ES Setif</td>
                   <td class="px-4 py-3 text-gray-300">DC 1X — 1.21</td>
                   <td class="px-4 py-3 text-white font-bold">0 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">08 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">08 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Sabail vs Karvan</td>
                   <td class="px-4 py-3 text-gray-300">Over 1.5 — 1.28</td>
                   <td class="px-4 py-3 text-white font-bold">1 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">08 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">08 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Shamrock Rovers vs Drogheda</td>
                   <td class="px-4 py-3 text-gray-300">Over 1.5 — 1.22</td>
                   <td class="px-4 py-3 text-white font-bold">3 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">08 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">08 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Portmore vs Waterhouse</td>
                   <td class="px-4 py-3 text-gray-300">DC 12 — 1.34</td>
                   <td class="px-4 py-3 text-white font-bold">1 – 1</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
                 <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">08 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">08 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Union Touarga vs Berkane</td>
                   <td class="px-4 py-3 text-gray-300">DC 12 — 1.33</td>
                   <td class="px-4 py-3 text-white font-bold">0 – 0</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
                 <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">08 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">08 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">AS Far Rabat vs Wydad</td>
                   <td class="px-4 py-3 text-gray-300">AS Far Rabat (1) — 1.40</td>
                   <td class="px-4 py-3 text-white font-bold">1 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">08 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">08 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Maghreb Fez vs Raja Casablanca</td>
                   <td class="px-4 py-3 text-gray-300">DC 12 — 1.39</td>
                   <td class="px-4 py-3 text-white font-bold">0 – 0</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
                 <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">08 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">08 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Pamba vs Geita Gold</td>
                   <td class="px-4 py-3 text-gray-300">DC 1X — 1.38</td>
                   <td class="px-4 py-3 text-white font-bold">4 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">07 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">07 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">CS Constantine vs Biskra</td>
                   <td class="px-4 py-3 text-gray-300">DC 1X — 1.50</td>
                   <td class="px-4 py-3 text-white font-bold">4 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">07 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">07 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">CR Belouizdad vs Khenchela</td>
                   <td class="px-4 py-3 text-gray-300">BTTS Yes — 1.80</td>
                   <td class="px-4 py-3 text-white font-bold">1 – 0</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">07 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">07 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">A. Petroleum vs Al Ahly</td>
                   <td class="px-4 py-3 text-gray-300">Al Ahly (2) — 1.45</td>
                   <td class="px-4 py-3 text-white font-bold">0 – 5</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">07 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">07 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Pyramids vs Al Qanah</td>
                   <td class="px-4 py-3 text-gray-300">Pyramids (1) — 1.55</td>
                   <td class="px-4 py-3 text-white font-bold">3 – 2</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">07 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">07 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Gnistan vs Inter Turku</td>
                   <td class="px-4 py-3 text-gray-300">BTTS Yes — 1.70</td>
                   <td class="px-4 py-3 text-white font-bold">0 – 0</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">07 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">07 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Al Mosul vs Al Quwa Al Jawiya</td>
                   <td class="px-4 py-3 text-gray-300">DC X2 — 1.60</td>
                   <td class="px-4 py-3 text-white font-bold">0 – 3</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">07 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">07 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Shooting Stars vs Kano Pillars</td>
                   <td class="px-4 py-3 text-gray-300">Shooting Stars (1) — 2.10</td>
                   <td class="px-4 py-3 text-white font-bold">0 – 0</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">07 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">07 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Sahdag Kusar vs Zaqatala</td>
                   <td class="px-4 py-3 text-gray-300">Over 1.5 — 1.25</td>
                   <td class="px-4 py-3 text-white font-bold">6 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">06 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">06 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Honduras vs Jamaica</td>
                   <td class="px-4 py-3 text-gray-300">Honduras (1) — 1.99</td>
                   <td class="px-4 py-3 text-white font-bold">1 – 1</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">06 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">06 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">England vs Czech Republic</td>
                   <td class="px-4 py-3 text-gray-300">Over 2.5 — 1.33</td>
                   <td class="px-4 py-3 text-white font-bold">3 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">06 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">06 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Croatia vs Spain</td>
                   <td class="px-4 py-3 text-gray-300">Spain (2) — 1.26</td>
                   <td class="px-4 py-3 text-white font-bold">1 – 2</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">06 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">06 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Scotland vs Slovenia</td>
                   <td class="px-4 py-3 text-gray-300">BTTS Yes — 2.11</td>
                   <td class="px-4 py-3 text-white font-bold">1 – 2</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">06 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">06 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Moldova vs Slovakia</td>
                   <td class="px-4 py-3 text-gray-300">Slovakia (2) — 1.40</td>
                   <td class="px-4 py-3 text-white font-bold">0 – 4</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">06 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">06 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Estonia vs Iceland</td>
                   <td class="px-4 py-3 text-gray-300">Iceland (2) — 1.57</td>
                   <td class="px-4 py-3 text-white font-bold">0 – 0</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">05 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">05 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">France vs Belgium</td>
                   <td class="px-4 py-3 text-gray-300">France (1) — 1.51</td>
                   <td class="px-4 py-3 text-white font-bold">4 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">05 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">05 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Italy vs Turkey</td>
                   <td class="px-4 py-3 text-gray-300">BTTS Yes — 1.83</td>
                   <td class="px-4 py-3 text-white font-bold">3 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">05 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">05 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Ukraine vs Hungary</td>
                   <td class="px-4 py-3 text-gray-300">Under 2.5 — 1.52</td>
                   <td class="px-4 py-3 text-white font-bold">1 – 2</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">05 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">05 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Romania vs Sweden</td>
                   <td class="px-4 py-3 text-gray-300">Sweden (2) — 1.73</td>
                   <td class="px-4 py-3 text-white font-bold">0 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">05 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">05 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Cyprus vs Latvia</td>
                   <td class="px-4 py-3 text-gray-300">Cyprus (1) — 1.54</td>
                   <td class="px-4 py-3 text-white font-bold">2 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">05 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">05 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Rwanda vs Kenya</td>
                   <td class="px-4 py-3 text-gray-300">Under 2.5 — 1.48</td>
                   <td class="px-4 py-3 text-white font-bold">0 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">04 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">04 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Greece vs Germany</td>
                   <td class="px-4 py-3 text-gray-300">Germany (2) — 1.84</td>
                   <td class="px-4 py-3 text-white font-bold">0 – 0</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">04 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">04 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Portugal vs Norway</td>
                   <td class="px-4 py-3 text-gray-300">BTTS Yes — 1.45</td>
                   <td class="px-4 py-3 text-white font-bold">2 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">04 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">04 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Wales vs Denmark</td>
                   <td class="px-4 py-3 text-gray-300">Denmark (2) — 2.11</td>
                   <td class="px-4 py-3 text-white font-bold">0 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">04 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">04 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Netherlands vs Serbia</td>
                   <td class="px-4 py-3 text-gray-300">Netherlands (1) — 1.20</td>
                   <td class="px-4 py-3 text-white font-bold">2 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">04 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">04 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Girona vs Mallorca</td>
                   <td class="px-4 py-3 text-gray-300">BTTS Yes — 1.72</td>
                   <td class="px-4 py-3 text-white font-bold">0 – 0</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">04 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">04 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Zaragoza vs CD Teruel</td>
                   <td class="px-4 py-3 text-gray-300">Zaragoza (1) — 1.30</td>
                   <td class="px-4 py-3 text-white font-bold">4 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">03 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">03 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Spain vs Czech Republic</td>
                   <td class="px-4 py-3 text-gray-300">BTTS Yes — 2.55</td>
                   <td class="px-4 py-3 text-white font-bold">3 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">03 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">03 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Croatia vs England</td>
                   <td class="px-4 py-3 text-gray-300">England (2) — 1.70</td>
                   <td class="px-4 py-3 text-white font-bold">0 – 7</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">03 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">03 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Ivory Coast vs Cameroon</td>
                   <td class="px-4 py-3 text-gray-300">Ivory Coast (1) — 1.83</td>
                   <td class="px-4 py-3 text-white font-bold">0 – 1</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">03 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">03 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Canada vs Peru</td>
                   <td class="px-4 py-3 text-gray-300">Canada (1) — 1.50</td>
                   <td class="px-4 py-3 text-white font-bold">2 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">03 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">03 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Switzerland vs Slovenia</td>
                   <td class="px-4 py-3 text-gray-300">Switzerland (1) — 1.30</td>
                   <td class="px-4 py-3 text-white font-bold">2 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">03 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">03 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Iceland vs Bulgaria</td>
                   <td class="px-4 py-3 text-gray-300">Iceland (1) — 1.45</td>
                   <td class="px-4 py-3 text-white font-bold">3 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">02 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">02 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">France vs Italy</td>
                   <td class="px-4 py-3 text-gray-300">France (1) — 1.50</td>
                   <td class="px-4 py-3 text-white font-bold">1 – 1</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">02 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">02 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Belgium vs Turkey</td>
                   <td class="px-4 py-3 text-gray-300">Belgium (1) — 1.55</td>
                   <td class="px-4 py-3 text-white font-bold">3 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">02 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">02 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Poland vs Romania</td>
                   <td class="px-4 py-3 text-gray-300">Poland (1) — 1.57</td>
                   <td class="px-4 py-3 text-white font-bold">6 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">02 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">02 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Hungary vs Georgia</td>
                   <td class="px-4 py-3 text-gray-300">BTTS Yes — 1.97</td>
                   <td class="px-4 py-3 text-white font-bold">1 – 0</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">02 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">02 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Cyprus vs Armenia</td>
                   <td class="px-4 py-3 text-gray-300">BTTS Yes — 1.85</td>
                   <td class="px-4 py-3 text-white font-bold">2 – 0</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">02 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">02 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Kazakhstan vs Moldova</td>
                   <td class="px-4 py-3 text-gray-300">Kazakhstan (1) — 1.90</td>
                   <td class="px-4 py-3 text-white font-bold">1 – 2</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">01 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">01 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Guinea vs Kenya</td>
                   <td class="px-4 py-3 text-gray-300">Guinea (1) — 1.85</td>
                   <td class="px-4 py-3 text-white font-bold">1 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">01 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">01 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Denmark vs Portugal</td>
                   <td class="px-4 py-3 text-gray-300">Portugal (2) — 2.10</td>
                   <td class="px-4 py-3 text-white font-bold">2 – 4</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">01 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">01 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Greece vs Netherlands</td>
                   <td class="px-4 py-3 text-gray-300">Netherlands (2) — 1.75</td>
                   <td class="px-4 py-3 text-white font-bold">2 – 2</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">01 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">01 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Wales vs Norway</td>
                   <td class="px-4 py-3 text-gray-300">Norway (2) — 2.45</td>
                   <td class="px-4 py-3 text-white font-bold">2 – 1</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">01 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">01 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Germany vs Serbia</td>
                   <td class="px-4 py-3 text-gray-300">Germany & Over 2.5 — 2.30</td>
                   <td class="px-4 py-3 text-white font-bold">2 – 0</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
                 <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
-                  <td class="px-4 py-3 text-gray-400 whitespace-nowrap">01 Oct 2026</td>
+                  <td class="px-4 py-3 text-gray-300 whitespace-nowrap">01 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-semibold">Israel vs Kosovo</td>
                   <td class="px-4 py-3 text-gray-300">Sare (X) — 3.20</td>
                   <td class="px-4 py-3 text-white font-bold">0 – 0</td>
@@ -1255,7 +1245,7 @@
             <span class="text-4xl">🏆</span>
             <div>
               <p class="font-display font-black text-2xl text-green-400">Tiketi ya Ushindi!</p>
-              <p class="font-body text-gray-400 text-sm">Utabiri 5 mechi — zote sahihi</p>
+              <p class="font-body text-gray-300 text-sm">Utabiri 5 mechi — zote sahihi</p>
             </div>
           </div>
           <div class="bg-green-900/40 border border-green-700/40 rounded-lg px-4 py-2 text-center">
@@ -1264,7 +1254,7 @@
         </div>
         <div class="rounded-2xl border border-brand-red/30 p-6 text-center"
              style="background: linear-gradient(135deg, #1a0808, #1a1a1a);">
-          <p class="font-body text-gray-400 text-sm mb-2">Wewe pia unaweza kushinda!</p>
+          <p class="font-body text-gray-300 text-sm mb-2">Wewe pia unaweza kushinda!</p>
           <p class="font-display font-black text-white text-xl mb-4">Tumia CODE <span class="text-brand-red">1029</span></p>
           <a href="https://a.meridianbet.co.tz/c/MwDx0D" target="_blank" rel="noopener"
              class="block bg-brand-red hover:bg-brand-redHot text-white font-head font-semibold
@@ -1288,7 +1278,7 @@
       <h2 class="font-display font-black text-4xl sm:text-5xl text-white uppercase mb-3">
         Faida za <span class="text-brand-red">MeridianBet</span>
       </h2>
-      <p class="font-body text-gray-400 max-w-xl mx-auto">Tunatoa huduma bora zaidi ya kubashiri michezo na kasino nchini Tanzania</p>
+      <p class="font-body text-gray-300 max-w-xl mx-auto">Tunatoa huduma bora zaidi ya kubashiri michezo na kasino nchini Tanzania</p>
     </div>
 
     <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -1297,56 +1287,56 @@
       <div class="benefit-card card-glow rounded-2xl border border-brand-border p-5 text-center" style="background:#1a1a1a;">
         <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-brand-red/15 border border-brand-red/30 flex items-center justify-center text-3xl">📈</div>
         <p class="font-display font-black text-white text-lg uppercase leading-tight mb-2">Odds Bora</p>
-        <p class="font-body text-gray-400 text-xs leading-relaxed">Odds za juu zaidi nchini Tanzania kwa michezo yote</p>
+        <p class="font-body text-gray-300 text-xs leading-relaxed">Odds za juu zaidi nchini Tanzania kwa michezo yote</p>
       </div>
 
       <!-- Benefit 2 -->
       <div class="benefit-card card-glow rounded-2xl border border-brand-border p-5 text-center" style="background:#1a1a1a;">
         <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-green-500/15 border border-green-500/30 flex items-center justify-center text-3xl">⚡</div>
         <p class="font-display font-black text-white text-lg uppercase leading-tight mb-2">Malipo ya Haraka</p>
-        <p class="font-body text-gray-400 text-xs leading-relaxed">Pokea malipo yako ndani ya dakika chache</p>
+        <p class="font-body text-gray-300 text-xs leading-relaxed">Pokea malipo yako ndani ya dakika chache</p>
       </div>
 
       <!-- Benefit 3 -->
       <div class="benefit-card card-glow rounded-2xl border border-brand-border p-5 text-center" style="background:#1a1a1a;">
         <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-blue-500/15 border border-blue-500/30 flex items-center justify-center text-3xl">🔴</div>
         <p class="font-display font-black text-white text-lg uppercase leading-tight mb-2">Live Betting</p>
-        <p class="font-body text-gray-400 text-xs leading-relaxed">Bashiri wakati mechi inaendelea moja kwa moja</p>
+        <p class="font-body text-gray-300 text-xs leading-relaxed">Bashiri wakati mechi inaendelea moja kwa moja</p>
       </div>
 
       <!-- Benefit 4 -->
       <div class="benefit-card card-glow rounded-2xl border border-brand-border p-5 text-center" style="background:#1a1a1a;">
         <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-brand-gold/15 border border-brand-gold/30 flex items-center justify-center text-3xl">🎰</div>
         <p class="font-display font-black text-white text-lg uppercase leading-tight mb-2">Kasino ya Mtandaoni</p>
-        <p class="font-body text-gray-400 text-xs leading-relaxed">Live Casino, Slots, Roulette na zaidi saa 24/7</p>
+        <p class="font-body text-gray-300 text-xs leading-relaxed">Live Casino, Slots, Roulette na zaidi saa 24/7</p>
       </div>
 
       <!-- Benefit 5 -->
       <div class="benefit-card card-glow rounded-2xl border border-brand-border p-5 text-center" style="background:#1a1a1a;">
         <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-purple-500/15 border border-purple-500/30 flex items-center justify-center text-3xl">🎮</div>
         <p class="font-display font-black text-white text-lg uppercase leading-tight mb-2">Slots & Jackpot</p>
-        <p class="font-body text-gray-400 text-xs leading-relaxed">Maelfu ya slots na jackpot kubwa zinazokungoja</p>
+        <p class="font-body text-gray-300 text-xs leading-relaxed">Maelfu ya slots na jackpot kubwa zinazokungoja</p>
       </div>
 
       <!-- Benefit 6 -->
       <div class="benefit-card card-glow rounded-2xl border border-brand-border p-5 text-center" style="background:#1a1a1a;">
         <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-cyan-500/15 border border-cyan-500/30 flex items-center justify-center text-3xl">📱</div>
         <p class="font-display font-black text-white text-lg uppercase leading-tight mb-2">Programu ya Simu</p>
-        <p class="font-body text-gray-400 text-xs leading-relaxed">Cheza popote ulipo kwa simu yako ya Android au iPhone</p>
+        <p class="font-body text-gray-300 text-xs leading-relaxed">Cheza popote ulipo kwa simu yako ya Android au iPhone</p>
       </div>
 
       <!-- Benefit 7 -->
       <div class="benefit-card card-glow rounded-2xl border border-brand-border p-5 text-center" style="background:#1a1a1a;">
         <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-orange-500/15 border border-orange-500/30 flex items-center justify-center text-3xl">🛎️</div>
         <p class="font-display font-black text-white text-lg uppercase leading-tight mb-2">Usaidizi Saa 24/7</p>
-        <p class="font-body text-gray-400 text-xs leading-relaxed">Timu ya msaada ipo saa yoyote utakapohitaji</p>
+        <p class="font-body text-gray-300 text-xs leading-relaxed">Timu ya msaada ipo saa yoyote utakapohitaji</p>
       </div>
 
       <!-- Benefit 8 -->
       <div class="benefit-card card-glow rounded-2xl border border-brand-border p-5 text-center" style="background:#1a1a1a;">
         <div class="w-14 h-14 mx-auto mb-4 rounded-2xl bg-pink-500/15 border border-pink-500/30 flex items-center justify-center text-3xl">💳</div>
         <p class="font-display font-black text-white text-lg uppercase leading-tight mb-2">Njia Nyingi za Malipo</p>
-        <p class="font-body text-gray-400 text-xs leading-relaxed">M-Pesa, Airtel Money, Tigo Pesa, Halopesa & zaidi</p>
+        <p class="font-body text-gray-300 text-xs leading-relaxed">M-Pesa, Airtel Money, Tigo Pesa, Halopesa & zaidi</p>
       </div>
 
     </div>
@@ -1365,7 +1355,7 @@
       <h2 class="font-display font-black text-4xl sm:text-5xl text-white uppercase mb-3">
         Kwa Nini Uchague <span class="text-brand-red">MeridianBet?</span>
       </h2>
-      <p class="font-body text-gray-400 max-w-xl mx-auto">Linganisha na uone tofauti inayofanya MeridianBet kuwa chaguo la kwanza Tanzania</p>
+      <p class="font-body text-gray-300 max-w-xl mx-auto">Linganisha na uone tofauti inayofanya MeridianBet kuwa chaguo la kwanza Tanzania</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -1386,13 +1376,13 @@
             </div>
           </div>
           <div class="flex items-center justify-between">
-            <span class="font-body text-gray-400 text-sm flex items-center gap-2"><span class="text-gray-600">✗</span> Washindani</span>
+            <span class="font-body text-gray-300 text-sm flex items-center gap-2"><span class="text-gray-400">✗</span> Washindani</span>
             <div class="flex gap-1">
               <span class="w-4 h-4 rounded-sm bg-gray-700"></span><span class="w-4 h-4 rounded-sm bg-gray-700"></span>
               <span class="w-4 h-4 rounded-sm bg-gray-700"></span><span class="w-4 h-4 rounded-sm bg-brand-border"></span><span class="w-4 h-4 rounded-sm bg-brand-border"></span>
             </div>
           </div>
-          <p class="font-body text-gray-500 text-xs pt-1">Tunatoa odds bora zaidi kwa mechi zote za soka, tenisi, na michezo mingine.</p>
+          <p class="font-body text-gray-300 text-xs pt-1">Tunatoa odds bora zaidi kwa mechi zote za soka, tenisi, na michezo mingine.</p>
         </div>
       </div>
 
@@ -1407,7 +1397,7 @@
           <div class="bg-brand-gold/10 border border-brand-gold/30 rounded-xl p-3 text-center">
             <p class="font-head text-brand-gold text-sm tracking-wide mb-1">BONASI YA UKARIBISHO</p>
             <p class="font-display font-black text-white text-3xl">100%</p>
-            <p class="font-body text-gray-400 text-xs mt-1">Kwa amana yako ya kwanza</p>
+            <p class="font-body text-gray-300 text-xs mt-1">Kwa amana yako ya kwanza</p>
           </div>
           <div class="text-center">
             <span class="font-head text-brand-red text-sm tracking-widest">TUMIA CODE: </span>
@@ -1428,21 +1418,21 @@
             <span class="text-green-400 text-lg">✓</span>
             <div>
               <p class="font-head text-white text-sm">M-Pesa / Airtel / Tigo</p>
-              <p class="font-body text-gray-400 text-xs">Malipo ndani ya dakika 2–5</p>
+              <p class="font-body text-gray-300 text-xs">Malipo ndani ya dakika 2–5</p>
             </div>
           </div>
           <div class="flex items-center gap-3 bg-green-900/20 border border-green-700/30 rounded-lg px-3 py-2">
             <span class="text-green-400 text-lg">✓</span>
             <div>
               <p class="font-head text-white text-sm">Hakuna Ada za Ziada</p>
-              <p class="font-body text-gray-400 text-xs">Toa mara moja, bila masharti</p>
+              <p class="font-body text-gray-300 text-xs">Toa mara moja, bila masharti</p>
             </div>
           </div>
           <div class="flex items-center gap-3 bg-green-900/20 border border-green-700/30 rounded-lg px-3 py-2">
             <span class="text-green-400 text-lg">✓</span>
             <div>
               <p class="font-head text-white text-sm">Saa 24/7 Kila Siku</p>
-              <p class="font-body text-gray-400 text-xs">Hata usiku wa manane</p>
+              <p class="font-body text-gray-300 text-xs">Hata usiku wa manane</p>
             </div>
           </div>
         </div>
@@ -1507,21 +1497,21 @@
             <span class="text-green-400 mt-0.5">🛡️</span>
             <div>
               <p class="font-head text-white text-sm">Leseni Rasmi</p>
-              <p class="font-body text-gray-400 text-xs">Imeidhinishwa na mamlaka ya Tanzania</p>
+              <p class="font-body text-gray-300 text-xs">Imeidhinishwa na mamlaka ya Tanzania</p>
             </div>
           </div>
           <div class="flex items-start gap-2">
             <span class="text-green-400 mt-0.5">🔐</span>
             <div>
               <p class="font-head text-white text-sm">Usalama wa SSL 256-bit</p>
-              <p class="font-body text-gray-400 text-xs">Data yako iko salama kabisa</p>
+              <p class="font-body text-gray-300 text-xs">Data yako iko salama kabisa</p>
             </div>
           </div>
           <div class="flex items-start gap-2">
             <span class="text-green-400 mt-0.5">✅</span>
             <div>
               <p class="font-head text-white text-sm">Inaoaminika</p>
-              <p class="font-body text-gray-400 text-xs">Wateja zaidi ya milioni Tanzania</p>
+              <p class="font-body text-gray-300 text-xs">Wateja zaidi ya milioni Tanzania</p>
             </div>
           </div>
         </div>
@@ -1542,7 +1532,7 @@
       <h2 class="font-display font-black text-4xl sm:text-5xl text-white uppercase mb-3">
         Kasino ya <span class="text-brand-red">MeridianBet</span>
       </h2>
-      <p class="font-body text-gray-400 max-w-xl mx-auto">Starehe ya kasino ya kweli moja kwa moja kutoka nyumbani kwako</p>
+      <p class="font-body text-gray-300 max-w-xl mx-auto">Starehe ya kasino ya kweli moja kwa moja kutoka nyumbani kwako</p>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-5">
@@ -1552,7 +1542,7 @@
         <div class="casino-img" style="background: linear-gradient(135deg,#1a0a0a,#2d0808);">🎬</div>
         <div class="p-4 flex flex-col flex-1">
           <p class="font-display font-black text-white text-xl uppercase mb-1">Live Casino</p>
-          <p class="font-body text-gray-400 text-xs mb-4 flex-1">Mchezo wa kweli na wafanyakazi wa kasino halisi kwa wakati halisi</p>
+          <p class="font-body text-gray-300 text-xs mb-4 flex-1">Mchezo wa kweli na wafanyakazi wa kasino halisi kwa wakati halisi</p>
           <a href="https://a.meridianbet.co.tz/c/MwDx0D" target="_blank" rel="noopener"
              class="block text-center bg-brand-red hover:bg-brand-redHot text-white font-head
                     font-semibold tracking-widest py-2.5 rounded-lg transition-colors uppercase text-xs">
@@ -1566,7 +1556,7 @@
         <div class="casino-img" style="background: linear-gradient(135deg,#0a0a1a,#08082d);">🎰</div>
         <div class="p-4 flex flex-col flex-1">
           <p class="font-display font-black text-white text-xl uppercase mb-1">Slots</p>
-          <p class="font-body text-gray-400 text-xs mb-4 flex-1">Zaidi ya michezo 1,000 ya slot inayokungoja — zungushia na ushinde!</p>
+          <p class="font-body text-gray-300 text-xs mb-4 flex-1">Zaidi ya michezo 1,000 ya slot inayokungoja — zungushia na ushinde!</p>
           <a href="https://a.meridianbet.co.tz/c/MwDx0D" target="_blank" rel="noopener"
              class="block text-center bg-brand-red hover:bg-brand-redHot text-white font-head
                     font-semibold tracking-widest py-2.5 rounded-lg transition-colors uppercase text-xs">
@@ -1580,7 +1570,7 @@
         <div class="casino-img" style="background: linear-gradient(135deg,#0a1a0a,#0d2d0d);">🎡</div>
         <div class="p-4 flex flex-col flex-1">
           <p class="font-display font-black text-white text-xl uppercase mb-1">Roulette</p>
-          <p class="font-body text-gray-400 text-xs mb-4 flex-1">Classic Roulette, European na American — chagua yako na beti!</p>
+          <p class="font-body text-gray-300 text-xs mb-4 flex-1">Classic Roulette, European na American — chagua yako na beti!</p>
           <a href="https://a.meridianbet.co.tz/c/MwDx0D" target="_blank" rel="noopener"
              class="block text-center bg-brand-red hover:bg-brand-redHot text-white font-head
                     font-semibold tracking-widest py-2.5 rounded-lg transition-colors uppercase text-xs">
@@ -1594,7 +1584,7 @@
         <div class="casino-img" style="background: linear-gradient(135deg,#1a1400,#2d2200);">🃏</div>
         <div class="p-4 flex flex-col flex-1">
           <p class="font-display font-black text-white text-xl uppercase mb-1">Blackjack</p>
-          <p class="font-body text-gray-400 text-xs mb-4 flex-1">Fikia 21 kabla ya kadi yako — mchezo unaohitaji akili na bahati</p>
+          <p class="font-body text-gray-300 text-xs mb-4 flex-1">Fikia 21 kabla ya kadi yako — mchezo unaohitaji akili na bahati</p>
           <a href="https://a.meridianbet.co.tz/c/MwDx0D" target="_blank" rel="noopener"
              class="block text-center bg-brand-red hover:bg-brand-redHot text-white font-head
                     font-semibold tracking-widest py-2.5 rounded-lg transition-colors uppercase text-xs">
@@ -1622,7 +1612,7 @@
             <p class="font-display font-black text-brand-red text-xl uppercase">Aviator</p>
             <span class="text-xs bg-brand-red/20 text-brand-red border border-brand-red/30 px-1.5 py-0.5 rounded font-head">MAARUFU</span>
           </div>
-          <p class="font-body text-gray-400 text-xs mb-4 flex-1">Angalia ndege inaruka — toka kabla hajaanguka na ubebe ushindi wako!</p>
+          <p class="font-body text-gray-300 text-xs mb-4 flex-1">Angalia ndege inaruka — toka kabla hajaanguka na ubebe ushindi wako!</p>
           <a href="https://a.meridianbet.co.tz/c/MwDx0D" target="_blank" rel="noopener"
              class="block text-center bg-brand-red hover:bg-brand-redHot text-white font-head
                     font-semibold tracking-widest py-2.5 rounded-lg transition-colors uppercase text-xs pulse-btn">
@@ -1640,7 +1630,7 @@
             <p class="font-display font-black text-brand-gold text-xl uppercase">Jackpot</p>
             <span class="text-xs bg-brand-gold/20 text-brand-gold border border-brand-gold/30 px-1.5 py-0.5 rounded font-head">HOT</span>
           </div>
-          <p class="font-body text-gray-400 text-xs mb-4 flex-1">Jackpot kubwa zinazokungojea — bonyeza mara moja ubadilishe maisha!</p>
+          <p class="font-body text-gray-300 text-xs mb-4 flex-1">Jackpot kubwa zinazokungojea — bonyeza mara moja ubadilishe maisha!</p>
           <a href="https://a.meridianbet.co.tz/c/MwDx0D" target="_blank" rel="noopener"
              class="block text-center text-white font-head font-semibold tracking-widest
                     py-2.5 rounded-lg transition-all uppercase text-xs hover:brightness-110"
@@ -1664,7 +1654,7 @@
       <h2 class="font-display font-black text-4xl sm:text-5xl text-white uppercase mb-3">
         Maswali Yanayoulizwa<br/><span class="text-brand-red">Mara Kwa Mara</span>
       </h2>
-      <p class="font-body text-gray-400">Pata majibu ya maswali yanayoulizwa mara nyingi kuhusu MeridianBet</p>
+      <p class="font-body text-gray-300">Pata majibu ya maswali yanayoulizwa mara nyingi kuhusu MeridianBet</p>
     </div>
 
     <div class="space-y-3" id="faq-list">
@@ -1753,7 +1743,7 @@
                 <span class="text-yellow-400">📱</span><span class="font-head text-white text-sm">Halopesa</span>
               </div>
             </div>
-            <p class="font-body text-gray-400 text-xs mt-3">Malipo ya kutoa yanafanywa ndani ya dakika 2–5. Hakuna ada za ziada!</p>
+            <p class="font-body text-gray-300 text-xs mt-3">Malipo ya kutoa yanafanywa ndani ya dakika 2–5. Hakuna ada za ziada!</p>
           </div>
         </div>
       </div>
@@ -1794,7 +1784,7 @@
         <div class="mb-4">
           <span class="font-head font-black text-3xl tracking-widest uppercase" style="font-weight:900;"><span class="text-brand-red">meridianbet</span><span class="text-brand-gold">tips</span></span>
         </div>
-        <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">
+        <p class="font-body text-gray-300 text-sm leading-relaxed mb-4">
           Jukwaa #1 la kubashiri michezo na kasino ya mtandaoni nchini Tanzania.
           Jiunge leo kwa kutumia Promo Code <strong class="text-brand-red">1029</strong>.
         </p>
@@ -1805,7 +1795,7 @@
       </div>
       <div>
         <p class="font-head text-white text-sm tracking-widest uppercase mb-4">Viungo vya Haraka</p>
-        <ul class="space-y-2 font-body text-sm text-gray-400">
+        <ul class="space-y-2 font-body text-sm text-gray-300">
           <li><a href="https://a.meridianbet.co.tz/c/MwDx0D" target="_blank" rel="noopener" class="hover:text-brand-red transition">⚽ Utabiri wa Michezo</a></li>
           <li><a href="https://a.meridianbet.co.tz/c/MwDx0D" target="_blank" rel="noopener" class="hover:text-brand-red transition">🎰 Kasino ya Mtandaoni</a></li>
           <li><a href="https://a.meridianbet.co.tz/c/MwDx0D" target="_blank" rel="noopener" class="hover:text-brand-red transition">✈️ Aviator Game</a></li>
@@ -1822,7 +1812,7 @@
             <span class="text-2xl">🔞</span>
             <span class="font-display font-black text-white text-lg">MIAKA 18+</span>
           </div>
-          <p class="font-body text-gray-400 text-xs leading-relaxed">
+          <p class="font-body text-gray-300 text-xs leading-relaxed">
             Kamari inahusisha hatari ya kupoteza pesa. Cheza kwa uwajibikaji na ndani ya uwezo wako wa
             kifedha. Usicheze zaidi ya uwezo wako. MeridianBet inakuza mchezo salama na wa uwajibikaji.
             Kwa usaidizi, wasiliana na huduma kwa wateja.
@@ -1830,7 +1820,7 @@
         </div>
       </div>
     </div>
-    <div class="border-t border-brand-border pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs font-body text-gray-600">
+    <div class="border-t border-brand-border pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs font-body text-gray-300">
       <p>© 2026 Meridianbettips. Haki zote zimehifadhiwa.</p>
       <p class="text-center">Promo Code: <span class="text-brand-red font-bold">1029</span> • Tumia kupata Bonasi ya Ukaribisho</p>
       <p></p>
@@ -1893,26 +1883,113 @@
   }, { threshold: 0.3 });
   document.querySelectorAll('#takwimu').forEach(el => observer.observe(el));
 
-  // ── Prediction cards show-more ──
-  (function initPredCards() {
-    const grid = document.getElementById('pred-grid');
-    const wrap = document.getElementById('pred-more-wrap');
-    if (!grid) return;
-    const cards = Array.from(grid.querySelectorAll('.pred-card'));
-    if (cards.length <= 6) return; // nothing to hide
-    // Hide cards beyond first 6
-    cards.forEach((c, i) => { if (i >= 6) c.classList.add('pred-hidden'); });
-    wrap.style.display = 'block';
-  })();
+  // ── Pred list show-more ──
+  let predListExpanded = false;
+  function togglePredList() {
+    predListExpanded = !predListExpanded;
+    document.querySelectorAll('.pred-row-extra').forEach(r => {
+      r.classList.toggle('hidden', !predListExpanded);
+    });
+    document.getElementById('pred-list-toggle').innerHTML = predListExpanded ? 'Ficha ▲' : 'Onyesha Zaidi ▼';
+  }
 
-  let predExpanded = false;
-  function togglePredCards() {
-    predExpanded = !predExpanded;
-    const grid = document.getElementById('pred-grid');
-    const btn  = document.getElementById('pred-toggle');
-    const hidden = grid.querySelectorAll('.pred-card.pred-hidden');
-    hidden.forEach(c => c.classList.toggle('pred-visible', predExpanded));
-    btn.innerHTML = predExpanded ? 'Ficha ▲' : 'Onyesha Zaidi ▼';
+  // ── Bet Calculator ──
+  let calcItems = []; // {name, odds, btn}
+
+  function addToCalc(name, odds, btn) {
+    // Check if already added
+    const exists = calcItems.find(i => i.name === name);
+    if (exists) {
+      removeFromCalc(name);
+      return;
+    }
+    calcItems.push({name, odds, btn});
+    btn.textContent = '✓';
+    btn.classList.remove('border-brand-red/50','text-brand-red');
+    btn.classList.add('bg-brand-red','text-white','border-brand-red');
+    renderCalcItems();
+    updateCalc();
+  }
+
+  function removeFromCalc(name) {
+    const item = calcItems.find(i => i.name === name);
+    if (item && item.btn) {
+      item.btn.textContent = '+';
+      item.btn.classList.add('border-brand-red/50','text-brand-red');
+      item.btn.classList.remove('bg-brand-red','text-white','border-brand-red');
+    }
+    calcItems = calcItems.filter(i => i.name !== name);
+    renderCalcItems();
+    updateCalc();
+  }
+
+  function clearCalc() {
+    calcItems.forEach(item => {
+      if (item.btn) {
+        item.btn.textContent = '+';
+        item.btn.classList.add('border-brand-red/50','text-brand-red');
+        item.btn.classList.remove('bg-brand-red','text-white','border-brand-red');
+      }
+    });
+    calcItems = [];
+    renderCalcItems();
+    updateCalc();
+  }
+
+  function renderCalcItems() {
+    const container = document.getElementById('calc-matches');
+    const empty = document.getElementById('calc-empty');
+    if (calcItems.length === 0) {
+      container.innerHTML = '<p id="calc-empty" class="font-body text-gray-300 text-sm text-center py-4">Bonyeza <span class="text-brand-gold font-bold">+</span> kuongeza mechi</p>';
+      return;
+    }
+    let html = '';
+    calcItems.forEach(item => {
+      html += `<div class="flex items-center justify-between gap-2 py-1.5 border-b border-brand-border/30">
+        <span class="font-body text-white text-xs flex-1 truncate">${item.name}</span>
+        <span class="font-display font-black text-brand-gold text-sm flex-shrink-0">${item.odds.toFixed(2)}</span>
+        <button onclick="removeFromCalc('${item.name.replace(/'/g,"\'")}')" class="text-brand-muted hover:text-brand-red transition text-xs flex-shrink-0">✕</button>
+      </div>`;
+    });
+    container.innerHTML = html;
+  }
+
+  let manualCount = 0;
+  function addManualOdds() {
+    const input = document.getElementById('calc-manual-odds');
+    const odds = parseFloat(input.value);
+    if (!odds || odds < 1) { input.focus(); return; }
+    manualCount++;
+    const name = 'Mechi Yako #' + manualCount;
+    calcItems.push({name, odds, btn: null});
+    input.value = '';
+    renderCalcItems();
+    updateCalc();
+  }
+
+  function updateCalc() {
+    const stake = parseFloat(document.getElementById('calc-stake').value) || 0;
+    const tax   = parseFloat(document.getElementById('calc-tax').value) || 0;
+    const oddsEl   = document.getElementById('calc-total-odds');
+    const grossEl  = document.getElementById('calc-gross');
+    const taxAmtEl = document.getElementById('calc-tax-amt');
+    const netEl    = document.getElementById('calc-net');
+
+    if (calcItems.length === 0 || stake <= 0) {
+      oddsEl.textContent = '–';
+      grossEl.textContent = '–';
+      taxAmtEl.textContent = '–';
+      netEl.textContent = '–';
+      return;
+    }
+    const totalOdds = calcItems.reduce((acc, i) => acc * i.odds, 1);
+    const gross = stake * totalOdds;
+    const taxAmt = gross * (tax / 100);
+    const net = gross - taxAmt;
+    oddsEl.textContent = totalOdds.toFixed(2);
+    grossEl.textContent = 'TZS ' + Math.round(gross).toLocaleString();
+    taxAmtEl.textContent = '– TZS ' + Math.round(taxAmt).toLocaleString();
+    netEl.textContent = 'TZS ' + Math.round(net).toLocaleString();
   }
 
   // ── Hamburger mobile menu ──
