@@ -185,8 +185,8 @@
   </style>
 
   <style>
-    @media (min-width: 768px) {
-      .pred-calc-grid { grid-template-columns: 3fr 2fr !important; }
+    @media (max-width: 640px) {
+      .pred-calc-grid > div { flex: 1 1 100% !important; }
     }
   </style>
 </head>
@@ -477,10 +477,10 @@
     </div>
 
     <!-- Main layout: predictions list + calculator -->
-    <div class="grid grid-cols-1 md:grid-cols-5 gap-6 md:items-stretch pred-calc-grid" style="display:grid; grid-template-columns: 1fr; gap:1.5rem; align-items:start;">
+    <div class="pred-calc-grid" style="display:flex; flex-wrap:wrap; gap:1.5rem; align-items:flex-start;">
 
       <!-- LEFT: Predictions List (3/5 width) -->
-      <div class="md:col-span-3 flex flex-col" style="min-width:0;">
+      <div class="flex flex-col" style="flex:3; min-width:280px;">
         <div class="rounded-2xl border border-brand-border overflow-hidden flex flex-col flex-1" style="background:#1a1a1a;">
           <!-- Table header -->
           <div class="px-4 py-3 border-b border-brand-border flex items-center gap-2" style="background:#111;">
@@ -739,7 +739,7 @@
       </div><!-- /left col -->
 
       <!-- RIGHT: Bet Calculator (2/5 width) -->
-      <div class="md:col-span-2 flex flex-col" style="min-width:0;">
+      <div class="flex flex-col" style="flex:2; min-width:280px;">
         <div class="rounded-2xl border border-brand-border h-full flex flex-col" style="background:#1a1a1a;">
           <!-- Header -->
           <div class="px-5 py-4 border-b border-brand-border" style="background:#111; border-radius:1rem 1rem 0 0;">
