@@ -186,7 +186,10 @@
 
   <style>
     @media (max-width: 640px) {
-      .pred-calc-grid > div { flex: 1 1 100% !important; }
+      .pred-calc-grid { flex-wrap: wrap !important; align-items: flex-start !important; }
+      .pred-calc-grid > div { flex: 1 1 100% !important; width: 100% !important; }
+      .pred-calc-grid .col-predictions { order: 1; }
+      .pred-calc-grid .col-calculator { order: 2; }
     }
   </style>
 </head>
@@ -480,7 +483,7 @@
     <div class="pred-calc-grid" style="display:flex; flex-wrap:nowrap; gap:1.5%; align-items:stretch;">
 
       <!-- LEFT: Predictions List (3/5 width) -->
-      <div class="flex flex-col" style="flex:0 0 59%; width:59%;">
+      <div class="col-predictions flex flex-col" style="flex:0 0 59%; width:59%;">
         <div class="rounded-2xl border border-brand-border overflow-hidden flex flex-col flex-1" style="background:#1a1a1a;">
           <!-- Table header -->
           <div class="px-4 py-3 border-b border-brand-border flex items-center gap-2" style="background:#111;">
@@ -739,7 +742,7 @@
       </div><!-- /left col -->
 
       <!-- RIGHT: Bet Calculator (2/5 width) -->
-      <div class="flex flex-col" style="flex:0 0 38%; width:38%;">
+      <div class="col-calculator flex flex-col" style="flex:0 0 38%; width:38%;">
         <div class="rounded-2xl border border-brand-border h-full flex flex-col" style="background:#1a1a1a;">
           <!-- Header -->
           <div class="px-5 py-4 border-b border-brand-border" style="background:#111; border-radius:1rem 1rem 0 0;">
