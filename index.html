@@ -83,7 +83,7 @@
     .ticker-inner:hover { animation-play-state: paused; }
 
     /* ── Table rows hidden ── */
-    .extra-row { display: table-row; }
+    .extra-row { display: none; }
     .extra-row.visible { display: table-row; }
 
     /* ── Toast ── */
@@ -498,6 +498,25 @@
             <div class="pred-row flex items-center gap-3 px-4 py-3 border-b border-white/10 hover:bg-white/[.02] transition-colors">
               <div class="flex-1 min-w-0">
                 <div class="flex items-center gap-2 mb-0.5">
+                  <span class="font-head text-xs tracking-wide" style="color:#22c55e;">Serie A</span>
+                  <span class="font-body text-gray-300 text-xs">13:30</span>
+                </div>
+                <p class="font-body text-white text-sm font-medium truncate">Como vs AS Roma</p>
+              </div>
+              <div class="text-right flex-shrink-0">
+                <p class="font-head text-brand-gold text-xs leading-tight">DC 12</p>
+              </div>
+              <div class="w-14 text-center flex-shrink-0">
+                <span class="font-display font-black text-brand-gold text-base">1.30</span>
+              </div>
+              <button onclick="addToCalc('Como vs AS Roma', 1.30, this)"
+                      class="w-8 h-8 flex-shrink-0 rounded-full border border-brand-red/50 text-brand-red hover:bg-brand-red hover:text-white transition-all flex items-center justify-center font-bold text-sm">+</button>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="pred-row flex items-center gap-3 px-4 py-3 border-b border-white/10 hover:bg-white/[.02] transition-colors">
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-0.5">
                   <span class="font-head text-xs tracking-wide" style="color:#22c55e;">Premier League</span>
                   <span class="font-body text-gray-300 text-xs">16:00</span>
                 </div>
@@ -513,7 +532,7 @@
                       class="w-8 h-8 flex-shrink-0 rounded-full border border-brand-red/50 text-brand-red hover:bg-brand-red hover:text-white transition-all flex items-center justify-center font-bold text-sm">+</button>
             </div>
 
-            <!-- Row 2 -->
+            <!-- Row 3 -->
             <div class="pred-row flex items-center gap-3 px-4 py-3 border-b border-white/10 hover:bg-white/[.02] transition-colors">
               <div class="flex-1 min-w-0">
                 <div class="flex items-center gap-2 mb-0.5">
@@ -529,25 +548,6 @@
                 <span class="font-display font-black text-brand-gold text-base">1.32</span>
               </div>
               <button onclick="addToCalc('Hull vs Everton', 1.32, this)"
-                      class="w-8 h-8 flex-shrink-0 rounded-full border border-brand-red/50 text-brand-red hover:bg-brand-red hover:text-white transition-all flex items-center justify-center font-bold text-sm">+</button>
-            </div>
-
-            <!-- Row 3 -->
-            <div class="pred-row flex items-center gap-3 px-4 py-3 border-b border-white/10 hover:bg-white/[.02] transition-colors">
-              <div class="flex-1 min-w-0">
-                <div class="flex items-center gap-2 mb-0.5">
-                  <span class="font-head text-xs tracking-wide" style="color:#22c55e;">Premier League</span>
-                  <span class="font-body text-gray-300 text-xs">18:30</span>
-                </div>
-                <p class="font-body text-white text-sm font-medium truncate">Liverpool vs Manchester City</p>
-              </div>
-              <div class="text-right flex-shrink-0">
-                <p class="font-head text-brand-gold text-xs leading-tight">DC 12</p>
-              </div>
-              <div class="w-14 text-center flex-shrink-0">
-                <span class="font-display font-black text-brand-gold text-base">1.29</span>
-              </div>
-              <button onclick="addToCalc('Liverpool vs Manchester City', 1.29, this)"
                       class="w-8 h-8 flex-shrink-0 rounded-full border border-brand-red/50 text-brand-red hover:bg-brand-red hover:text-white transition-all flex items-center justify-center font-bold text-sm">+</button>
             </div>
 
@@ -574,25 +574,6 @@
             <div class="pred-row flex items-center gap-3 px-4 py-3 border-b border-white/10 hover:bg-white/[.02] transition-colors">
               <div class="flex-1 min-w-0">
                 <div class="flex items-center gap-2 mb-0.5">
-                  <span class="font-head text-xs tracking-wide" style="color:#22c55e;">Ligue 1</span>
-                  <span class="font-body text-gray-300 text-xs">21:45</span>
-                </div>
-                <p class="font-body text-white text-sm font-medium truncate">Troyes vs Marseille</p>
-              </div>
-              <div class="text-right flex-shrink-0">
-                <p class="font-head text-brand-gold text-xs leading-tight">DC x2</p>
-              </div>
-              <div class="w-14 text-center flex-shrink-0">
-                <span class="font-display font-black text-brand-gold text-base">1.28</span>
-              </div>
-              <button onclick="addToCalc('Troyes vs Marseille', 1.28, this)"
-                      class="w-8 h-8 flex-shrink-0 rounded-full border border-brand-red/50 text-brand-red hover:bg-brand-red hover:text-white transition-all flex items-center justify-center font-bold text-sm">+</button>
-            </div>
-
-            <!-- Row 6 -->
-            <div class="pred-row flex items-center gap-3 px-4 py-3 border-b border-white/10 hover:bg-white/[.02] transition-colors">
-              <div class="flex-1 min-w-0">
-                <div class="flex items-center gap-2 mb-0.5">
                   <span class="font-head text-xs tracking-wide" style="color:#22c55e;">Bundesliga</span>
                   <span class="font-body text-gray-300 text-xs">16:30</span>
                 </div>
@@ -608,7 +589,45 @@
                       class="w-8 h-8 flex-shrink-0 rounded-full border border-brand-red/50 text-brand-red hover:bg-brand-red hover:text-white transition-all flex items-center justify-center font-bold text-sm">+</button>
             </div>
 
+            <!-- Row 6 -->
+            <div class="pred-row flex items-center gap-3 px-4 py-3 border-b border-white/10 hover:bg-white/[.02] transition-colors">
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-0.5">
+                  <span class="font-head text-xs tracking-wide" style="color:#22c55e;">LaLiga</span>
+                  <span class="font-body text-gray-300 text-xs">17:15</span>
+                </div>
+                <p class="font-body text-white text-sm font-medium truncate">Real Sociedad vs Dep. A. Coruna</p>
+              </div>
+              <div class="text-right flex-shrink-0">
+                <p class="font-head text-brand-gold text-xs leading-tight">Over 1.5</p>
+              </div>
+              <div class="w-14 text-center flex-shrink-0">
+                <span class="font-display font-black text-brand-gold text-base">1.23</span>
+              </div>
+              <button onclick="addToCalc('Real Sociedad vs Dep. A. Coruna', 1.23, this)"
+                      class="w-8 h-8 flex-shrink-0 rounded-full border border-brand-red/50 text-brand-red hover:bg-brand-red hover:text-white transition-all flex items-center justify-center font-bold text-sm">+</button>
+            </div>
+
             <!-- Row 7 -->
+            <div class="pred-row flex items-center gap-3 px-4 py-3 border-b border-white/10 hover:bg-white/[.02] transition-colors">
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-0.5">
+                  <span class="font-head text-xs tracking-wide" style="color:#22c55e;">Premier League</span>
+                  <span class="font-body text-gray-300 text-xs">18:30</span>
+                </div>
+                <p class="font-body text-white text-sm font-medium truncate">Liverpool vs Manchester City</p>
+              </div>
+              <div class="text-right flex-shrink-0">
+                <p class="font-head text-brand-gold text-xs leading-tight">DC 12</p>
+              </div>
+              <div class="w-14 text-center flex-shrink-0">
+                <span class="font-display font-black text-brand-gold text-base">1.29</span>
+              </div>
+              <button onclick="addToCalc('Liverpool vs Manchester City', 1.29, this)"
+                      class="w-8 h-8 flex-shrink-0 rounded-full border border-brand-red/50 text-brand-red hover:bg-brand-red hover:text-white transition-all flex items-center justify-center font-bold text-sm">+</button>
+            </div>
+
+            <!-- Row 8 -->
             <div class="pred-row flex items-center gap-3 px-4 py-3 border-b border-white/10 hover:bg-white/[.02] transition-colors">
               <div class="flex-1 min-w-0">
                 <div class="flex items-center gap-2 mb-0.5">
@@ -624,25 +643,6 @@
                 <span class="font-display font-black text-brand-gold text-base">1.65</span>
               </div>
               <button onclick="addToCalc('Freiburg vs Schalke', 1.65, this)"
-                      class="w-8 h-8 flex-shrink-0 rounded-full border border-brand-red/50 text-brand-red hover:bg-brand-red hover:text-white transition-all flex items-center justify-center font-bold text-sm">+</button>
-            </div>
-
-            <!-- Row 8 -->
-            <div class="pred-row flex items-center gap-3 px-4 py-3 border-b border-white/10 hover:bg-white/[.02] transition-colors">
-              <div class="flex-1 min-w-0">
-                <div class="flex items-center gap-2 mb-0.5">
-                  <span class="font-head text-xs tracking-wide" style="color:#22c55e;">Serie A</span>
-                  <span class="font-body text-gray-300 text-xs">13:30</span>
-                </div>
-                <p class="font-body text-white text-sm font-medium truncate">Como vs AS Roma</p>
-              </div>
-              <div class="text-right flex-shrink-0">
-                <p class="font-head text-brand-gold text-xs leading-tight">DC 12</p>
-              </div>
-              <div class="w-14 text-center flex-shrink-0">
-                <span class="font-display font-black text-brand-gold text-base">1.30</span>
-              </div>
-              <button onclick="addToCalc('Como vs AS Roma', 1.30, this)"
                       class="w-8 h-8 flex-shrink-0 rounded-full border border-brand-red/50 text-brand-red hover:bg-brand-red hover:text-white transition-all flex items-center justify-center font-bold text-sm">+</button>
             </div>
 
@@ -669,44 +669,6 @@
             <div class="pred-row pred-row-extra hidden flex items-center gap-3 px-4 py-3 border-b border-white/10 hover:bg-white/[.02] transition-colors">
               <div class="flex-1 min-w-0">
                 <div class="flex items-center gap-2 mb-0.5">
-                  <span class="font-head text-xs tracking-wide" style="color:#22c55e;">Serie A</span>
-                  <span class="font-body text-gray-300 text-xs">21:45</span>
-                </div>
-                <p class="font-body text-white text-sm font-medium truncate">Cagliari vs Juventus</p>
-              </div>
-              <div class="text-right flex-shrink-0">
-                <p class="font-head text-brand-gold text-xs leading-tight">Over 1.5</p>
-              </div>
-              <div class="w-14 text-center flex-shrink-0">
-                <span class="font-display font-black text-brand-gold text-base">1.31</span>
-              </div>
-              <button onclick="addToCalc('Cagliari vs Juventus', 1.31, this)"
-                      class="w-8 h-8 flex-shrink-0 rounded-full border border-brand-red/50 text-brand-red hover:bg-brand-red hover:text-white transition-all flex items-center justify-center font-bold text-sm">+</button>
-            </div>
-
-            <!-- Row 11 -->
-            <div class="pred-row pred-row-extra hidden flex items-center gap-3 px-4 py-3 border-b border-white/10 hover:bg-white/[.02] transition-colors">
-              <div class="flex-1 min-w-0">
-                <div class="flex items-center gap-2 mb-0.5">
-                  <span class="font-head text-xs tracking-wide" style="color:#22c55e;">LaLiga</span>
-                  <span class="font-body text-gray-300 text-xs">17:15</span>
-                </div>
-                <p class="font-body text-white text-sm font-medium truncate">Real Sociedad vs Dep. A. Coruna</p>
-              </div>
-              <div class="text-right flex-shrink-0">
-                <p class="font-head text-brand-gold text-xs leading-tight">Over 1.5</p>
-              </div>
-              <div class="w-14 text-center flex-shrink-0">
-                <span class="font-display font-black text-brand-gold text-base">1.23</span>
-              </div>
-              <button onclick="addToCalc('Real Sociedad vs Dep. A. Coruna', 1.23, this)"
-                      class="w-8 h-8 flex-shrink-0 rounded-full border border-brand-red/50 text-brand-red hover:bg-brand-red hover:text-white transition-all flex items-center justify-center font-bold text-sm">+</button>
-            </div>
-
-            <!-- Row 12 -->
-            <div class="pred-row pred-row-extra hidden flex items-center gap-3 px-4 py-3 hover:bg-white/[.02] transition-colors">
-              <div class="flex-1 min-w-0">
-                <div class="flex items-center gap-2 mb-0.5">
                   <span class="font-head text-xs tracking-wide" style="color:#22c55e;">LaLiga</span>
                   <span class="font-body text-gray-300 text-xs">19:30</span>
                 </div>
@@ -722,7 +684,45 @@
                       class="w-8 h-8 flex-shrink-0 rounded-full border border-brand-red/50 text-brand-red hover:bg-brand-red hover:text-white transition-all flex items-center justify-center font-bold text-sm">+</button>
             </div>
 
-                    <!-- /pred-list -->
+            <!-- Row 11 -->
+            <div class="pred-row pred-row-extra hidden flex items-center gap-3 px-4 py-3 border-b border-white/10 hover:bg-white/[.02] transition-colors">
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-0.5">
+                  <span class="font-head text-xs tracking-wide" style="color:#22c55e;">Ligue 1</span>
+                  <span class="font-body text-gray-300 text-xs">21:45</span>
+                </div>
+                <p class="font-body text-white text-sm font-medium truncate">Troyes vs Marseille</p>
+              </div>
+              <div class="text-right flex-shrink-0">
+                <p class="font-head text-brand-gold text-xs leading-tight">DC x2</p>
+              </div>
+              <div class="w-14 text-center flex-shrink-0">
+                <span class="font-display font-black text-brand-gold text-base">1.28</span>
+              </div>
+              <button onclick="addToCalc('Troyes vs Marseille', 1.28, this)"
+                      class="w-8 h-8 flex-shrink-0 rounded-full border border-brand-red/50 text-brand-red hover:bg-brand-red hover:text-white transition-all flex items-center justify-center font-bold text-sm">+</button>
+            </div>
+
+            <!-- Row 12 -->
+            <div class="pred-row pred-row-extra hidden flex items-center gap-3 px-4 py-3 hover:bg-white/[.02] transition-colors">
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-0.5">
+                  <span class="font-head text-xs tracking-wide" style="color:#22c55e;">Serie A</span>
+                  <span class="font-body text-gray-300 text-xs">21:45</span>
+                </div>
+                <p class="font-body text-white text-sm font-medium truncate">Cagliari vs Juventus</p>
+              </div>
+              <div class="text-right flex-shrink-0">
+                <p class="font-head text-brand-gold text-xs leading-tight">Over 1.5</p>
+              </div>
+              <div class="w-14 text-center flex-shrink-0">
+                <span class="font-display font-black text-brand-gold text-base">1.31</span>
+              </div>
+              <button onclick="addToCalc('Cagliari vs Juventus', 1.31, this)"
+                      class="w-8 h-8 flex-shrink-0 rounded-full border border-brand-red/50 text-brand-red hover:bg-brand-red hover:text-white transition-all flex items-center justify-center font-bold text-sm">+</button>
+            </div>
+
+                              <!-- /pred-list -->
 
           <!-- Show more button -->
           <div id="pred-list-more-wrap" class="px-4 py-2 text-center" style="background:#111;border-top:1px solid rgba(229,9,20,0.35);">
@@ -863,543 +863,542 @@
                 </tr>
               </thead>
               <tbody id="results-table">
-                <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">10 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Simba vs Young Africans</td>
                   <td class="px-4 py-3 text-gray-300">DC 12</td>
                   <td class="px-4 py-3 text-white font-medium">2 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">10 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Arsenal vs Leeds</td>
                   <td class="px-4 py-3 text-gray-300">Over 1.5</td>
                   <td class="px-4 py-3 text-white font-medium">2 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">10 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Chelsea vs Bournemouth</td>
                   <td class="px-4 py-3 text-gray-300">DC 12</td>
                   <td class="px-4 py-3 text-white font-medium">5 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">10 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Aston Villa vs Bournemouth</td>
                   <td class="px-4 py-3 text-gray-300">Over 1.5</td>
                   <td class="px-4 py-3 text-white font-medium">2 – 2</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">10 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Manchester United vs Tottenham</td>
                   <td class="px-4 py-3 text-gray-300">DC 12</td>
                   <td class="px-4 py-3 text-white font-medium">1 – 1</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
-                <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">10 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">PSG vs Le Mans</td>
                   <td class="px-4 py-3 text-gray-300">PSG Kushinda</td>
                   <td class="px-4 py-3 text-white font-medium">3 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">10 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Augsburg vs Bayern Munich</td>
                   <td class="px-4 py-3 text-gray-300">Over 3.5</td>
                   <td class="px-4 py-3 text-white font-medium">2 – 2</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">10 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Mainz vs Bayer Leverkusen</td>
                   <td class="px-4 py-3 text-gray-300">DC 12</td>
                   <td class="px-4 py-3 text-white font-medium">3 – 4</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">10 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">RB Leipzig vs Eintracht Frankfurt</td>
                   <td class="px-4 py-3 text-gray-300">Over 2.5</td>
                   <td class="px-4 py-3 text-white font-medium">6 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">10 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Inter vs Parma</td>
                   <td class="px-4 py-3 text-gray-300">Inter Kushinda</td>
                   <td class="px-4 py-3 text-white font-medium">3 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">10 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Barcelona vs Getafe</td>
                   <td class="px-4 py-3 text-gray-300">Barcelona Kushinda</td>
                   <td class="px-4 py-3 text-white font-medium">3 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">10 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Real Madrid vs Villareal</td>
                   <td class="px-4 py-3 text-gray-300">Real Madrid Kushinda</td>
                   <td class="px-4 py-3 text-white font-medium">1 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-
-                <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">09 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Kabylie vs ASO Chlef</td>
                   <td class="px-4 py-3 text-gray-300">Kabylie (1) — 1.42</td>
                   <td class="px-4 py-3 text-white font-medium">1 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">09 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">MC Alger vs Temouchent</td>
                   <td class="px-4 py-3 text-gray-300">MC Alger (1) — 1.17</td>
                   <td class="px-4 py-3 text-white font-medium">1 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">09 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Lens vs Lyon</td>
                   <td class="px-4 py-3 text-gray-300">DC 12 — 1.29</td>
                   <td class="px-4 py-3 text-white font-medium">2 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">09 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Dortmund vs Werder Bremen</td>
                   <td class="px-4 py-3 text-gray-300">Dortmund (1) — 1.35</td>
                   <td class="px-4 py-3 text-white font-medium">2 – 2</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
-                <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">09 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">PSV vs Heerenveen</td>
                   <td class="px-4 py-3 text-gray-300">PSV (1) — 1.25</td>
                   <td class="px-4 py-3 text-white font-medium">2 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">09 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Malaga vs Espanyol</td>
                   <td class="px-4 py-3 text-gray-300">Over 1.5 — 1.33</td>
                   <td class="px-4 py-3 text-white font-medium">1 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">09 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Al Kholood vs Al Qadsiah</td>
                   <td class="px-4 py-3 text-gray-300">Al Qadsiah (2) — 1.50</td>
                   <td class="px-4 py-3 text-white font-medium">0 – 5</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">09 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Al Nassr vs Al Diriyah</td>
                   <td class="px-4 py-3 text-gray-300">Al Nassr (1) — 1.39</td>
                   <td class="px-4 py-3 text-white font-medium">3 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">09 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">West Ham vs Queen Park</td>
                   <td class="px-4 py-3 text-gray-300">West Ham (1) — 1.50</td>
                   <td class="px-4 py-3 text-white font-medium">1 – 1</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
-                <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">09 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Bereven vs Lommel SK</td>
                   <td class="px-4 py-3 text-gray-300">DC 1X — 1.23</td>
                   <td class="px-4 py-3 text-white font-medium">1 – 3</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
-                <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">08 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Rouisset vs USM Alger</td>
                   <td class="px-4 py-3 text-gray-300">DC 12 — 1.34</td>
                   <td class="px-4 py-3 text-white font-medium">1 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">08 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Saoura vs Olympique Akbou</td>
                   <td class="px-4 py-3 text-gray-300">DC 12 — 1.31</td>
                   <td class="px-4 py-3 text-white font-medium">0 – 0</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">08 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Oran vs ES Setif</td>
                   <td class="px-4 py-3 text-gray-300">DC 1X — 1.21</td>
                   <td class="px-4 py-3 text-white font-medium">0 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">08 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Sabail vs Karvan</td>
                   <td class="px-4 py-3 text-gray-300">Over 1.5 — 1.28</td>
                   <td class="px-4 py-3 text-white font-medium">1 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">08 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Shamrock Rovers vs Drogheda</td>
                   <td class="px-4 py-3 text-gray-300">Over 1.5 — 1.22</td>
                   <td class="px-4 py-3 text-white font-medium">3 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">08 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Portmore vs Waterhouse</td>
                   <td class="px-4 py-3 text-gray-300">DC 12 — 1.34</td>
                   <td class="px-4 py-3 text-white font-medium">1 – 1</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">08 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Union Touarga vs Berkane</td>
                   <td class="px-4 py-3 text-gray-300">DC 12 — 1.33</td>
                   <td class="px-4 py-3 text-white font-medium">0 – 0</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">08 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">AS Far Rabat vs Wydad</td>
                   <td class="px-4 py-3 text-gray-300">AS Far Rabat (1) — 1.40</td>
                   <td class="px-4 py-3 text-white font-medium">1 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">08 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Maghreb Fez vs Raja Casablanca</td>
                   <td class="px-4 py-3 text-gray-300">DC 12 — 1.39</td>
                   <td class="px-4 py-3 text-white font-medium">0 – 0</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">08 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Pamba vs Geita Gold</td>
                   <td class="px-4 py-3 text-gray-300">DC 1X — 1.38</td>
                   <td class="px-4 py-3 text-white font-medium">4 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">07 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">CS Constantine vs Biskra</td>
                   <td class="px-4 py-3 text-gray-300">DC 1X — 1.50</td>
                   <td class="px-4 py-3 text-white font-medium">4 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">07 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">CR Belouizdad vs Khenchela</td>
                   <td class="px-4 py-3 text-gray-300">BTTS Yes — 1.80</td>
                   <td class="px-4 py-3 text-white font-medium">1 – 0</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">07 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">A. Petroleum vs Al Ahly</td>
                   <td class="px-4 py-3 text-gray-300">Al Ahly (2) — 1.45</td>
                   <td class="px-4 py-3 text-white font-medium">0 – 5</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">07 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Pyramids vs Al Qanah</td>
                   <td class="px-4 py-3 text-gray-300">Pyramids (1) — 1.55</td>
                   <td class="px-4 py-3 text-white font-medium">3 – 2</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">07 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Gnistan vs Inter Turku</td>
                   <td class="px-4 py-3 text-gray-300">BTTS Yes — 1.70</td>
                   <td class="px-4 py-3 text-white font-medium">0 – 0</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">07 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Al Mosul vs Al Quwa Al Jawiya</td>
                   <td class="px-4 py-3 text-gray-300">DC X2 — 1.60</td>
                   <td class="px-4 py-3 text-white font-medium">0 – 3</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">07 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Shooting Stars vs Kano Pillars</td>
                   <td class="px-4 py-3 text-gray-300">Shooting Stars (1) — 2.10</td>
                   <td class="px-4 py-3 text-white font-medium">0 – 0</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">07 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Sahdag Kusar vs Zaqatala</td>
                   <td class="px-4 py-3 text-gray-300">Over 1.5 — 1.25</td>
                   <td class="px-4 py-3 text-white font-medium">6 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">06 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Honduras vs Jamaica</td>
                   <td class="px-4 py-3 text-gray-300">Honduras (1) — 1.99</td>
                   <td class="px-4 py-3 text-white font-medium">1 – 1</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">06 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">England vs Czech Republic</td>
                   <td class="px-4 py-3 text-gray-300">Over 2.5 — 1.33</td>
                   <td class="px-4 py-3 text-white font-medium">3 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">06 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Croatia vs Spain</td>
                   <td class="px-4 py-3 text-gray-300">Spain (2) — 1.26</td>
                   <td class="px-4 py-3 text-white font-medium">1 – 2</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">06 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Scotland vs Slovenia</td>
                   <td class="px-4 py-3 text-gray-300">BTTS Yes — 2.11</td>
                   <td class="px-4 py-3 text-white font-medium">1 – 2</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">06 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Moldova vs Slovakia</td>
                   <td class="px-4 py-3 text-gray-300">Slovakia (2) — 1.40</td>
                   <td class="px-4 py-3 text-white font-medium">0 – 4</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">06 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Estonia vs Iceland</td>
                   <td class="px-4 py-3 text-gray-300">Iceland (2) — 1.57</td>
                   <td class="px-4 py-3 text-white font-medium">0 – 0</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">05 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">France vs Belgium</td>
                   <td class="px-4 py-3 text-gray-300">France (1) — 1.51</td>
                   <td class="px-4 py-3 text-white font-medium">4 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">05 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Italy vs Turkey</td>
                   <td class="px-4 py-3 text-gray-300">BTTS Yes — 1.83</td>
                   <td class="px-4 py-3 text-white font-medium">3 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">05 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Ukraine vs Hungary</td>
                   <td class="px-4 py-3 text-gray-300">Under 2.5 — 1.52</td>
                   <td class="px-4 py-3 text-white font-medium">1 – 2</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">05 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Romania vs Sweden</td>
                   <td class="px-4 py-3 text-gray-300">Sweden (2) — 1.73</td>
                   <td class="px-4 py-3 text-white font-medium">0 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">05 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Cyprus vs Latvia</td>
                   <td class="px-4 py-3 text-gray-300">Cyprus (1) — 1.54</td>
                   <td class="px-4 py-3 text-white font-medium">2 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">05 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Rwanda vs Kenya</td>
                   <td class="px-4 py-3 text-gray-300">Under 2.5 — 1.48</td>
                   <td class="px-4 py-3 text-white font-medium">0 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">04 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Greece vs Germany</td>
                   <td class="px-4 py-3 text-gray-300">Germany (2) — 1.84</td>
                   <td class="px-4 py-3 text-white font-medium">0 – 0</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">04 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Portugal vs Norway</td>
                   <td class="px-4 py-3 text-gray-300">BTTS Yes — 1.45</td>
                   <td class="px-4 py-3 text-white font-medium">2 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">04 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Wales vs Denmark</td>
                   <td class="px-4 py-3 text-gray-300">Denmark (2) — 2.11</td>
                   <td class="px-4 py-3 text-white font-medium">0 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">04 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Netherlands vs Serbia</td>
                   <td class="px-4 py-3 text-gray-300">Netherlands (1) — 1.20</td>
                   <td class="px-4 py-3 text-white font-medium">2 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">04 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Girona vs Mallorca</td>
                   <td class="px-4 py-3 text-gray-300">BTTS Yes — 1.72</td>
                   <td class="px-4 py-3 text-white font-medium">0 – 0</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">04 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Zaragoza vs CD Teruel</td>
                   <td class="px-4 py-3 text-gray-300">Zaragoza (1) — 1.30</td>
                   <td class="px-4 py-3 text-white font-medium">4 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">03 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Spain vs Czech Republic</td>
                   <td class="px-4 py-3 text-gray-300">BTTS Yes — 2.55</td>
                   <td class="px-4 py-3 text-white font-medium">3 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">03 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Croatia vs England</td>
                   <td class="px-4 py-3 text-gray-300">England (2) — 1.70</td>
                   <td class="px-4 py-3 text-white font-medium">0 – 7</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">03 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Ivory Coast vs Cameroon</td>
                   <td class="px-4 py-3 text-gray-300">Ivory Coast (1) — 1.83</td>
                   <td class="px-4 py-3 text-white font-medium">0 – 1</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">03 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Canada vs Peru</td>
                   <td class="px-4 py-3 text-gray-300">Canada (1) — 1.50</td>
                   <td class="px-4 py-3 text-white font-medium">2 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">03 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Switzerland vs Slovenia</td>
                   <td class="px-4 py-3 text-gray-300">Switzerland (1) — 1.30</td>
                   <td class="px-4 py-3 text-white font-medium">2 – 1</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">03 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Iceland vs Bulgaria</td>
                   <td class="px-4 py-3 text-gray-300">Iceland (1) — 1.45</td>
                   <td class="px-4 py-3 text-white font-medium">3 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">02 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">France vs Italy</td>
                   <td class="px-4 py-3 text-gray-300">France (1) — 1.50</td>
                   <td class="px-4 py-3 text-white font-medium">1 – 1</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">02 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Belgium vs Turkey</td>
                   <td class="px-4 py-3 text-gray-300">Belgium (1) — 1.55</td>
                   <td class="px-4 py-3 text-white font-medium">3 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">02 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Poland vs Romania</td>
                   <td class="px-4 py-3 text-gray-300">Poland (1) — 1.57</td>
                   <td class="px-4 py-3 text-white font-medium">6 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">02 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Hungary vs Georgia</td>
                   <td class="px-4 py-3 text-gray-300">BTTS Yes — 1.97</td>
                   <td class="px-4 py-3 text-white font-medium">1 – 0</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">02 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Cyprus vs Armenia</td>
                   <td class="px-4 py-3 text-gray-300">BTTS Yes — 1.85</td>
                   <td class="px-4 py-3 text-white font-medium">2 – 0</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">02 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Kazakhstan vs Moldova</td>
                   <td class="px-4 py-3 text-gray-300">Kazakhstan (1) — 1.90</td>
                   <td class="px-4 py-3 text-white font-medium">1 – 2</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">01 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Guinea vs Kenya</td>
                   <td class="px-4 py-3 text-gray-300">Guinea (1) — 1.85</td>
                   <td class="px-4 py-3 text-white font-medium">1 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">01 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Denmark vs Portugal</td>
                   <td class="px-4 py-3 text-gray-300">Portugal (2) — 2.10</td>
                   <td class="px-4 py-3 text-white font-medium">2 – 4</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">01 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Greece vs Netherlands</td>
                   <td class="px-4 py-3 text-gray-300">Netherlands (2) — 1.75</td>
                   <td class="px-4 py-3 text-white font-medium">2 – 2</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">01 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Wales vs Norway</td>
                   <td class="px-4 py-3 text-gray-300">Norway (2) — 2.45</td>
                   <td class="px-4 py-3 text-white font-medium">2 – 1</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">01 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Germany vs Serbia</td>
                   <td class="px-4 py-3 text-gray-300">Germany & Over 2.5 — 2.30</td>
                   <td class="px-4 py-3 text-white font-medium">2 – 0</td>
                   <td class="px-4 py-3"><span class="badge-lost text-xs font-head px-2 py-1 rounded-full">✗ Umekosa</span></td>
                 </tr>
-                <tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
+<tr class="extra-row border-t border-brand-border hover:bg-white/[.02] transition-colors">
                   <td class="px-4 py-3 text-gray-300 whitespace-nowrap">01 Oct 2026</td>
                   <td class="px-4 py-3 text-white font-medium">Israel vs Kosovo</td>
                   <td class="px-4 py-3 text-gray-300">Sare (X) — 3.20</td>
                   <td class="px-4 py-3 text-white font-medium">0 – 0</td>
                   <td class="px-4 py-3"><span class="badge-won text-xs font-head px-2 py-1 rounded-full">✓ Umeshinda</span></td>
                 </tr>
-              </tbody>
+                </tbody>
             </table>
           </div>
-          <div class="px-4 py-4 border-t border-brand-border text-center" style="display:none;">
+          <div class="px-4 py-4 border-t border-brand-border text-center">
             <button id="toggle-rows" onclick="toggleRows()"
               class="font-head text-sm tracking-widest text-brand-red border border-brand-red/40
                      hover:bg-brand-red hover:text-white px-6 py-2 rounded-lg transition-all uppercase">
